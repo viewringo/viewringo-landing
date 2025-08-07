@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewRingo - Elevate Your BI Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-chart-pie me-2"></i>ViewRingo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.html" data-lang="en">English</a></li>
+                            <li><a class="dropdown-item" href="index_ko.html" data-lang="ko">한국어</a></li>
+                            <li><a class="dropdown-item" href="index_zh.html" data-lang="zh">中文</a></li>
+                            <li><a class="dropdown-item" href="index_ja.html" data-lang="ja">日本語</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center text-center text-white position-relative">
+        <div class="sliding-background-container">
+            <img src="images/powerbi.png" alt="Power BI Report" class="sliding-background-image" data-tool-name="Power BI">
+            <img src="images/tableau.png" alt="Tableau Report" class="sliding-background-image" data-tool-name="Tableau">
+            <img src="images/qlik.jpg" alt="Qlik Report" class="sliding-background-image" data-tool-name="Qlik">
+            <img src="images/superset.png" alt="Superset Report" class="sliding-background-image" data-tool-name="Superset">
+            <img src="images/longview.jpg" alt="Longview Report" class="sliding-background-image" data-tool-name="Longview">
+            <img src="images/microstrategy.png" alt="MicroStrategy Report" class="sliding-background-image" data-tool-name="MicroStrategy">
+            <img src="images/powerbi.png" alt="Power BI Report" class="sliding-background-image" data-tool-name="Power BI"> <!-- Duplicate first image for seamless loop -->
+        </div>
+        <div class="overlay"></div>
+        <div class="container hero-content position-relative z-1">
+            <span id="current-bi-tool-label" class="bi-tool-label animate__animated animate__fadeInDown animate__delay-0-5s"></span>
+            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">Unify Your Business Intelligence.</h1>
+            <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s">Simplify Your Decisions with ViewRingo.</p>
+            <a href="#features" class="btn btn-primary btn-lg mt-4 animate__animated animate__zoomIn animate__delay-2s">Explore Features <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">About ViewRingo</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/about-us.jpg" alt="About Us" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead">ViewRingo is a **BI portal platform** designed to integrate various BI tools such as Power BI, Tableau, Qlik, Superset, MicroStrategy, and Longview into a single, unified UI. It provides consistent authentication and authorization systems across all integrated tools.</p>
+                    <p>Our core features include maximizing user convenience by integrating reports from multiple BI tools, offering unified authentication, menu, and authorization management, and providing consistent UX with personalization features like themes, favorites, and start pages. ViewRingo also experimentally supports an AI-based Co-Pilot (NL2SQL analysis assistant).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">Unlock the Power of Your Data</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cubes fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Unified BI Tool Integration</h5>
+                            <p class="card-text">Seamlessly integrate and manage leading BI tools including <strong>Power BI, Tableau, Qlik, Superset, Longview, and MicroStrategy</strong>. Access all your reports and dashboards from a single, intuitive interface, maximizing user convenience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Centralized Security & Access</h5>
+                            <p class="card-text">Leverage a robust, centralized authentication and authorization system for all integrated BI tools. Simplify user access control and fortify your data security posture with consistent policies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-users-cog fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Comprehensive Management</h5>
+                            <p class="card-text">Efficiently manage users (auto/multi-registration, password management), menus (BI tool report registration UI), and permissions (groups, matrix) across your entire BI ecosystem. Includes monitoring logs for activity tracking.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Cutting-Edge Technology</h5>
+                            <p class="card-text">Built on ASP.NET Core (.NET 8.0) with TypeScript for dynamic frontend services, AdminLTE-based Razor views, and Dapper for high-performance data access, ensuring scalability and reliability. HTML5 based for multi-device support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Flexible Data Infrastructure</h5>
+                            <p class="card-text">Primary support for SQL Server and PostgreSQL, with planned support for Oracle and MySQL. This offers unparalleled flexibility for your evolving data infrastructure needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Advanced Analytics & Insights</h5>
+                            <p class="card-text">Beyond integration, ViewRingo provides tools for deeper analytics, including experimental AI-based Co-Pilot (NL2SQL analysis assistant) for extracting meaningful insights and making data-driven decisions with confidence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">Get in Touch</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-center lead">Ready to transform your BI landscape? Contact us today to learn how ViewRingo can empower your organization.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control form-control-lg" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-lg" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control form-control-lg" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                        </div>
+                    </form>
+                    <p class="text-center mt-4 lead">Or reach out directly: <a href="mailto:jamesq72@gmail.com" class="text-primary fw-bold">jamesq72@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 ViewRingo. All rights reserved.</p>
+            <p class="mb-0"><small>Built with <i class="fas fa-heart text-danger"></i> by ViewRingo Team</small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

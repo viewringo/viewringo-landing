@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewRingo - BIエクスペリエンスを向上させる</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-chart-pie me-2"></i>ViewRingo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">会社概要</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">機能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">お問い合わせ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            言語
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.html" data-lang="en">English</a></li>
+                            <li><a class="dropdown-item" href="index_ko.html" data-lang="ko">한국어</a></li>
+                            <li><a class="dropdown-item" href="index_zh.html" data-lang="zh">中文</a></li>
+                            <li><a class="dropdown-item" href="index_ja.html" data-lang="ja">日本語</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center text-center text-white position-relative">
+        <div class="sliding-background-container">
+            <img src="images/powerbi.png" alt="Power BI レポート" class="sliding-background-image" data-tool-name="Power BI">
+            <img src="images/tableau.png" alt="Tableau レポート" class="sliding-background-image" data-tool-name="Tableau">
+            <img src="images/qlik.jpg" alt="Qlik レポート" class="sliding-background-image" data-tool-name="Qlik">
+            <img src="images/superset.png" alt="Superset レポート" class="sliding-background-image" data-tool-name="Superset">
+            <img src="images/longview.jpg" alt="Longview レポート" class="sliding-background-image" data-tool-name="Longview">
+            <img src="images/microstrategy.png" alt="MicroStrategy レポート" class="sliding-background-image" data-tool-name="MicroStrategy">
+            <img src="images/powerbi.png" alt="Power BI レポート" class="sliding-background-image" data-tool-name="Power BI"> <!-- Duplicate first image for seamless loop -->
+        </div>
+        <div class="overlay"></div>
+        <div class="container hero-content position-relative z-1">
+            <span id="current-bi-tool-label" class="bi-tool-label animate__animated animate__fadeInDown animate__delay-0-5s"></span>
+            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">ビジネスインテリジェンスを統合します。</h1>
+            <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s">ViewRingoで意思決定を簡素化します。</p>
+            <a href="#features" class="btn btn-primary btn-lg mt-4 animate__animated animate__zoomIn animate__delay-2s">機能を見る <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">ViewRingoについて</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/about-us.jpg" alt="会社概要" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead">ViewRingoは、Power BI、Tableau、Qlik、Superset、MicroStrategy、Longviewなど、さまざまなBIツールを単一の統合UIで管理し、認証および権限体系まで一貫して提供する**BIポータルプラットフォーム**です。</p>
+                    <p>主な特徴としては、複数のBIツールのレポートを統合してユーザーの利便性を最大限に高め、統合認証、メニュー、権限管理体系を提供し、一貫したUXとテーマ、お気に入り、開始ページなどのパーソナライズ機能を提供します。また、AIベースのCo-Pilot（NL2SQL分析アシスタント）を実験的にサポートしています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">データの力を解き放つ</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-cubes fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">統合BIツール統合</h5>
+                            <p class="card-text"><strong>Power BI、Tableau、Qlik、Superset、Longview、MicroStrategy</strong>を含む主要なBIツールをシームレスに統合および管理します。単一の直感的なインターフェースからすべてのレポートとダッシュボードにアクセスし、ユーザーの利便性を最大限に高めます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">集中型セキュリティとアクセス</h5>
+                            <p class="card-text">すべての統合BIツールに対して、堅牢で集中型の認証および認可システムを活用します。ユーザーアクセス制御を簡素化し、一貫したポリシーでデータセキュリティ体制を強化します。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-users-cog fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">包括的な管理</h5>
+                            <p class="card-text">BIエコシステム全体でユーザー（自動/複数登録、パスワード管理）、メニュー（BIツールレポート登録UI）、権限（グループ、マトリックス）を効率的に管理します。活動追跡のための監視ログを含みます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">最先端技術</h5>
+                            <p class="card-text">ASP.NET Core (.NET 8.0) をベースに構築されており、動的なフロントエンドサービスにはTypeScript、AdminLTEベースのRazorビュー、高性能データアクセスにはDapperを使用し、スケーラビリティと信頼性を保証します。マルチデバイスサポートのためのHTML5ベースです。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">柔軟なデータインフラストラクチャ</h5>
+                            <p class="card-text">SQL ServerおよびPostgreSQLを主要にサポートし、OracleおよびMySQLのサポートも計画されています。これにより、進化するデータインフラストラクチャのニーズに対応するための比類のない柔軟性が提供されます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 feature-card">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">高度な分析と洞察</h5>
+                            <p class="card-text">統合を超えて、ViewRingoは実験的なAIベースのCo-Pilot（NL2SQL分析アシスタント）を含む、より深い分析のためのツールを提供し、ユーザーが意味のある洞察を抽出し、自信を持ってデータ駆動型の意思決定を行えるようにします。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-bold">お問い合わせ</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-center lead">BIランドスケープを変革する準備はできていますか？ViewRingoが組織にどのように力を与えることができるかを知るために、今すぐお問い合わせください。</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">名前</label>
+                            <input type="text" class="form-control form-control-lg" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">メールアドレス</label>
+                            <input type="email" class="form-control form-control-lg" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">メッセージ</label>
+                            <textarea class="form-control form-control-lg" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">メッセージを送信 <i class="fas fa-paper-plane ms-2"></i></button>
+                        </div>
+                    </form>
+                    <p class="text-center mt-4 lead">または直接お問い合わせください：<a href="mailto:jamesq72@gmail.com" class="text-primary fw-bold">jamesq72@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 ViewRingo. 全著作権所有。</p>
+            <p class="mb-0"><small>ViewRingo チームが <i class="fas fa-heart text-danger"></i> で作成</small></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
