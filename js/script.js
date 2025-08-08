@@ -65,4 +65,42 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Start the slider
     setInterval(updateSlider, 3000); // Change image every 3 seconds
+
+    // EmailJS integration for contact form
+    (function() {
+        // IMPORTANT: Replace 'YOUR_PUBLIC_KEY' with your actual Public Key from your EmailJS account.
+        emailjs.init('o9OuOowb-wue0AEy-');
+    })();
+
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalButtonHTML = submitButton.innerHTML;
+            
+            // Disable button and show spinner
+            submitButton.disabled = true;
+            submitButton.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...`;
+
+            // IMPORTANT: Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs from EmailJS.
+            // The form input 'id' attributes (name, email, message) must match the variables in your EmailJS template.
+            const serviceID = 'service_gmqugw6';
+            const templateID = 'template_7y2k35p';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert('Your message has been sent successfully!');
+                    contactForm.reset(); // Clear the form
+                }, (err) => {
+                    alert('Failed to send the message. Please try again later. Error: ' + JSON.stringify(err));
+                })
+                .finally(() => {
+                    // Re-enable button and restore original text
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = originalButtonHTML;
+                });
+        });
+    }
 });
