@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...`;
 
             // IMPORTANT: Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs from EmailJS.
-            // The form input 'id' attributes (name, email, message) must match the variables in your EmailJS template.
+            // The form input 'name' attributes (name, email, message) must match the variables in your EmailJS template.
             const serviceID = 'service_gmqugw6';
             const templateID = 'template_7y2k35p';
 
