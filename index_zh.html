@@ -1,193 +1,388 @@
 <!DOCTYPE html>
-<html lang="zh" data-lang="zh">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViewRingo - 提升您的BI体验</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHQVKQ58P6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ViewRingo — Enterprise Analytics Portal</title>
+<meta name="description" content="ViewRingo Enterprise Analytics Portal — 位于用户与 BI/分析平台之间的公共层。无需更换现有 BI，即可统一为一套用户体验与安全体系。">
+<link rel="canonical" href="https://www.viewringo.com/index_zh.html">
+<link rel="alternate" hreflang="en" href="https://www.viewringo.com/index.html">
+<link rel="alternate" hreflang="ko" href="https://www.viewringo.com/index_zh.html">
+<link rel="alternate" hreflang="ja" href="https://www.viewringo.com/index_ja.html">
+<link rel="alternate" hreflang="zh" href="https://www.viewringo.com/index_zh.html">
+<link rel="alternate" hreflang="x-default" href="https://www.viewringo.com/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ViewRingo — Enterprise Analytics Portal">
+<meta property="og:description" content="无需更换现有 BI，统一为一套用户体验与安全体系。8 个 BI 平台 · Cloud &amp; On-Premise · SSO · Governance · AI Analytics">
+<meta property="og:image" content="https://www.viewringo.com/images/hero/powerbi.jpg">
+<meta property="og:url" content="https://www.viewringo.com/index_zh.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" crossorigin="anonymous"></script>
+<link href="css/style.css" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WHQVKQ58P6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-WHQVKQ58P6');
-    </script>
+    gtag('config', 'G-WHQVKQ58P6');
+</script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-chart-pie me-2"></i>ViewRingo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">关于我们</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">功能</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">联系我们</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            语言
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="index.html" data-lang="en">English</a></li>
-                            <li><a class="dropdown-item" href="index_ko.html" data-lang="ko">한국어</a></li>
-                            <li><a class="dropdown-item" href="index_zh.html" data-lang="zh">中文</a></li>
-                            <li><a class="dropdown-item" href="index_ja.html" data-lang="ja">日本語</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<a class="skip" href="#main">跳转到正文</a>
 
-    <section id="home" class="hero-section d-flex align-items-center text-center text-white position-relative">
-        <div class="sliding-background-container">
-            <img src="images/powerbi.png" alt="Power BI 报告" class="sliding-background-image" data-tool-name="Power BI">
-            <img src="images/tableau.png" alt="Tableau 报告" class="sliding-background-image" data-tool-name="Tableau">
-            <img src="images/qlik.png" alt="Qlik 报告" class="sliding-background-image" data-tool-name="Qlik">
-            <img src="images/superset.png" alt="Superset 报告" class="sliding-background-image" data-tool-name="Superset">
-            <img src="images/longview.jpg" alt="Longview 报告" class="sliding-background-image" data-tool-name="Longview">
-            <img src="images/microstrategy.png" alt="MicroStrategy 报告" class="sliding-background-image" data-tool-name="MicroStrategy">
-            <img src="images/powerbi.png" alt="Power BI 报告" class="sliding-background-image" data-tool-name="Power BI"> <!-- Duplicate first image for seamless loop -->
-        </div>
-        <div class="overlay"></div>
-        <div class="container hero-content position-relative z-1">
-            <span id="current-bi-tool-label" class="bi-tool-label animate__animated animate__fadeInDown animate__delay-0-5s"></span>
-            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">统一您的商业智能。</h1>
-            <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s">使用 ViewRingo 简化您的决策。</p>
-            <a href="#features" class="btn btn-primary btn-lg mt-4 animate__animated animate__zoomIn animate__delay-2s">探索功能 <i class="fas fa-arrow-right ms-2"></i></a>
-        </div>
-    </section>
+<header class="nav" id="siteNav">
+  <div class="nav-in">
+    <a class="brand" href="#home" aria-label="ViewRingo 首页"><img src="images/logos/viewringo.png" alt="ViewRingo — Data Insight in one place"></a>
+    <button class="nav-burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="打开菜单" data-label-open="打开菜单" data-label-close="关闭菜单"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">概览</a></li>
+      <li><a href="#platforms">平台</a></li>
+      <li><a href="#ai">AI 分析</a></li>
+      <li><a href="#governance">治理</a></li>
+      <li><a href="#cases">案例</a></li>
+      <li><a href="#contact">联系</a></li>
+      <li>
+        <details class="lang" id="langBox">
+          <summary>中文</summary>
+          <ul class="lang-menu">
+            <li><a href="index.html" hreflang="en">English</a></li>
+            <li><a href="index_ko.html" hreflang="ko">한국어</a></li>
+            <li><a href="index_zh.html" hreflang="zh" aria-current="true">中文</a></li>
+            <li><a href="index_ja.html" hreflang="ja">日本語</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a class="nav-cta" href="#contact">联系我们</a></li>
+    </ul>
+  </div>
+</header>
 
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">关于 ViewRingo</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="images/about-us.png" alt="关于我们" class="img-fluid rounded shadow-lg">
-                </div>
-                <div class="col-lg-6">
-                    <p class="lead">ViewRingo 是一个 **BI 门户平台**，旨在将 Power BI、Tableau、Qlik、Superset、MicroStrategy 和 Longview 等各种 BI 工具整合到一个统一的用户界面中。它为所有集成工具提供一致的身份验证和授权系统。</p>
-                    <p>我们的核心功能包括通过集成多个 BI 工具的报告来最大化用户便利性，提供统一的身份验证、菜单和授权管理，以及提供一致的用户体验和个性化功能，如主题、收藏夹和起始页。ViewRingo 还实验性地支持基于 AI 的 Co-Pilot (NL2SQL 分析助手)。</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<main id="main">
 
-    <section id="features" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">释放您的数据力量</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-cubes fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">统一的 BI 工具集成</h5>
-                            <p class="card-text">无缝集成和管理领先的 BI 工具，包括 <strong>Power BI、Tableau、Qlik、Superset、Longview 和 MicroStrategy</strong>。从单一、直观的界面访问您的所有报告和仪表板，最大限度地提高用户便利性。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">集中式安全和访问</h5>
-                            <p class="card-text">为所有集成 BI 工具利用强大且集中式的身份验证和授权系统。简化用户访问控制并以一致的策略增强您的数据安全态势。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-users-cog fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">全面的管理</h5>
-                            <p class="card-text">高效管理整个 BI 生态系统中的用户（自动/多重注册、密码管理）、菜单（BI 工具报告注册 UI）和权限（组、矩阵）。包括用于活动跟踪的监控日志。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">尖端技术</h5>
-                            <p class="card-text">基于 ASP.NET Core (.NET 8.0) 构建，前端服务采用 TypeScript，Razor 视图基于 AdminLTE，数据访问采用 Dapper，确保高性能和可扩展性。基于 HTML5，支持多设备。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">灵活的数据基础设施</h5>
-                            <p class="card-text">主要支持 SQL Server 和 PostgreSQL，并计划支持 Oracle 和 MySQL。这为不断发展的数据基础设施需求提供了无与伦比的灵活性。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">高级分析和洞察</h5>
-                            <p class="card-text">除了集成，ViewRingo 还提供更深入的分析工具，包括实验性的基于 AI 的 Co-Pilot (NL2SQL 分析助手)，使用户能够提取有意义的洞察并自信地做出数据驱动的决策。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-readout">
+      <p class="readout-row"><span class="live-dot" aria-hidden="true"></span><span class="hero-tool" id="heroTool">Power BI</span></p>
+      <div class="hero-ticks" id="heroTicks" role="group" aria-label="选择要显示的 BI 平台"></div>
+    </div>
+    <h1>Enterprise<br>Analytics&nbsp;Portal.</h1>
+    <p class="hero-deck">超越 BI 整合：位于用户与 BI/分析平台之间的公共层。</p>
+    <p class="hero-sub">无需更换现有 BI，即可统一为一套用户体验与安全体系。</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#contact">联系我们</a>
+      <a class="btn btn-ghost" href="#about">了解功能</a>
+    </div>
+    <p class="hero-keys"><span class="hero-keys-lead">Replace your BI tools? No. Unify them.</span> · 8 个 BI 平台 · Cloud &amp; On-Premise · SSO · Governance · AI Analytics</p>
+  </div>
 
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">联系我们</h2>
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <p class="text-center lead">准备好改变您的 BI 格局了吗？立即联系我们，了解 ViewRingo 如何赋能您的组织。</p>
-                    <form id="contact-form">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">姓名</label>
-                            <input type="text" class="form-control form-control-lg" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">电子邮件地址</label>
-                            <input type="email" class="form-control form-control-lg" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">消息</label>
-                            <textarea class="form-control form-control-lg" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-lg">发送消息 <i class="fas fa-paper-plane ms-2"></i></button>
-                        </div>
-                    </form>
-                    <p class="text-center mt-4 lead">或直接联系：<a href="mailto:support@viewringo.com" class="text-primary fw-bold">support@viewringo.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="hero-stage">
+    <div class="hero-track" id="heroTrack">
+      <img class="hero-shot" src="images/hero/powerbi.jpg" data-tool="Power BI" alt="在 ViewRingo 门户中打开的 Power BI 销售仪表板" fetchpriority="high" decoding="async">
+      <img class="hero-shot" src="images/hero/tableau.jpg" data-tool="Tableau" alt="在 ViewRingo 门户中打开的 Tableau 盈利概览报表" decoding="async">
+      <img class="hero-shot" src="images/hero/qlik.jpg" data-tool="Qlik Sense" alt="在 ViewRingo 门户中打开的 Qlik Sense 销售分析工作表" decoding="async">
+      <img class="hero-shot" src="images/hero/superset.jpg" data-tool="Apache Superset" alt="在 ViewRingo 门户中打开的 Apache Superset 人口指标仪表板" decoding="async">
+      <img class="hero-shot" src="images/hero/microstrategy.jpg" data-tool="MicroStrategy" alt="在 ViewRingo 门户中打开的 MicroStrategy 门店业绩 Dossier" decoding="async">
+      <img class="hero-shot" src="images/hero/databricks.jpg" data-tool="Databricks" alt="在 ViewRingo 门户中打开的 Databricks AI/BI 仪表板" decoding="async">
+      <img class="hero-shot" src="images/hero/pbirs.jpg" data-tool="Power BI Report Server" alt="在 ViewRingo 门户中打开的 Power BI Report Server 分页报表" decoding="async">
+      <img class="hero-shot" src="images/hero/powerbi.jpg" data-tool="Power BI" alt="" aria-hidden="true" decoding="async">
+    </div>
+  </div>
+  <div class="hero-scrim"></div>
 
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2025 ViewRingo. 保留所有权利。</p>
-        </div>
-    </footer>
+  <div class="hero-plinth">
+    <div class="plinth-in">
+      <span class="plogo"><img src="images/logos/powerbi.png" alt="Power BI"></span>
+      <span class="plogo tall"><img src="images/logos/tableau.png" alt="Tableau"></span>
+      <span class="plogo tall"><img src="images/logos/qlik.png" alt="Qlik Sense"></span>
+      <span class="plogo"><img src="images/logos/superset.png" alt="Apache Superset"></span>
+      <span class="plogo"><img src="images/logos/longview.png" alt="Longview"></span>
+      <span class="plogo"><img src="images/logos/microstrategy.png" alt="MicroStrategy"></span>
+      <span class="plogo"><img src="images/logos/databricks.png" alt="Databricks"></span>
+      <span class="plogo tall"><img src="images/logos/pbirs.png" alt="Power BI Report Server"></span>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="js/script.js"></script>
+<div class="band" aria-label="ViewRingo 四大要点">
+  <div class="band-in">
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-layer-group"></i></span><div><b>8 个 BI 平台</b><span class="sub">统一于单一门户</span></div></div>
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-cloud"></i></span><div><b>Cloud · On-Premise</b><span class="sub">两种环境均支持</span></div></div>
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-key"></i></span><div><b>SSO 单点登录</b><span class="sub">以门户权限统一管理</span></div></div>
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-wand-magic-sparkles"></i></span><div><b>内置 AI 分析</b><span class="sub">Genie · Data Assistant</span></div></div>
+  </div>
+</div>
+
+<section class="sec sec-2" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>为什么现在需要 Enterprise Analytics Portal</h2>
+      <p class="deck">BI 工具随部门不断增加，用户和管理员却要在其间来回切换、重复同样的工作。</p>
+    </div>
+    <div class="items">
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-cubes-stacked"></i></span><div><h3>工具不断增加</h3><p>各部门、各子公司的独立采购不断累积，一家企业内并存着多种不同的 BI。</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-user-lock"></i></span><div><h3>权限四分五裂</h3><p>每个工具的账号与权限体系各不相同，给同一个人授予同样范围也要重复多次。</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-magnifying-glass-chart"></i></span><div><h3>依据无从追溯</h3><p>无法回答报表中的数字来自哪张表、改动后会影响什么。</p></div></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>86%</b><span class="sub">的组织使用两种以上 BI 工具</span><small>Forrester 调研 · Zoho 引用</small></div>
+      <div class="stat"><b>96%</b><span class="sub">期待通过自然语言数据查询提升成效</span><small>Salesforce 调研 · 含韩国 500 家企业，2026</small></div>
+      <p class="answer">不减少工具，而是统一门户。</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>构建在现有 BI 之上的公共层</h2>
+      <p class="deck">即使新增 BI 工具，用户体验、认证、权限、菜单与日志体系也保持不变。</p>
+    </div>
+    <div class="items" style="margin-bottom:clamp(28px,3.4vw,40px)">
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-table-columns"></i></span><div><h3>现有 BI 原样保留，汇聚于一个门户</h3><p>Power BI · Tableau · Qlik Sense · Superset · Longview · MicroStrategy · Databricks · PBIRS，同一 URL，同一界面。</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-shield-halved"></i></span><div><h3>统一认证与权限</h3><p>以基于策略的权限组统一访问控制，所有访问都记入活动日志。</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-robot"></i></span><div><h3>门户内置的 AI Analytics</h3><p>在门户权限体系内使用 Databricks Genie 与 Data Assistant。</p></div></div>
+    </div>
+<div class="ab" role="group" aria-label="从分散的 BI 资产（AS-IS）到 ViewRingo 单一门户（TO-BE）">
+  <div class="ab-card">
+    <span class="ab-tag">AS-IS</span>
+    <p class="ab-h">分散的 BI 资产</p>
+    <div class="ring" aria-hidden="true">
+      <div class="ring-tile"><img src="images/logos/powerbi.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/tableau.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/qlik.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/superset.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/microstrategy.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/longview.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/databricks.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/pbirs.png" alt=""></div>
+      <div class="ring-center"><b>8<small>种</small></b><span class="sub">各自不同的地址与账号</span></div>
+    </div>
+    <p class="ab-cap">每个工具各有不同的地址、UI、账号与权限</p>
+  </div>
+
+  <div class="ab-arrow" aria-hidden="true">
+    <svg viewBox="0 0 72 88"><path d="M0 22 H40 V0 L72 44 L40 88 V66 H0 Z" fill="var(--ring-accent)"/></svg>
+    <span>ViewRingo<br>统一环境</span>
+  </div>
+
+  <div class="ab-card is-to">
+    <span class="ab-tag">TO-BE</span>
+    <p class="ab-h">ViewRingo Enterprise Analytics Portal</p>
+    <img class="ab-shot" src="images/hero/tableau.jpg" alt="在 ViewRingo 门户标签页中打开的 Tableau 报表" loading="lazy">
+    <div class="ab-logos" aria-hidden="true">
+      <span><img src="images/logos/powerbi.png" alt=""></span><span><img src="images/logos/tableau.png" alt=""></span>
+      <span><img src="images/logos/qlik.png" alt=""></span><span><img src="images/logos/superset.png" alt=""></span>
+      <span><img src="images/logos/longview.png" alt=""></span><span><img src="images/logos/microstrategy.png" alt=""></span>
+      <span><img src="images/logos/databricks.png" alt=""></span><span><img src="images/logos/pbirs.png" alt=""></span>
+    </div>
+    <p class="ab-cap">同一地址 · 同一 UI · 同一认证与权限</p>
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="sec sec-2" id="platforms">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>支持的 8 个 BI 平台</h2>
+      <p class="deck">直接采用各厂商官方的嵌入与认证方式，因此现有报表权限与审计体系得以保留。</p>
+    </div>
+    <div class="plat-grid">
+      <div class="plat"><div class="logo"><img src="images/logos/powerbi.png" alt=""></div><b>Power BI</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span></div></div>
+      <div class="plat"><div class="logo tall"><img src="images/logos/tableau.png" alt=""></div><b>Tableau</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo tall"><img src="images/logos/qlik.png" alt=""></div><b>Qlik Sense</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/superset.png" alt=""></div><b>Apache Superset</b><div class="chips"><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/longview.png" alt=""></div><b>Longview</b><div class="chips"><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/microstrategy.png" alt=""></div><b>MicroStrategy</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/databricks.png" alt=""></div><b>Databricks<span class="new-badge">NEW</span></b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span></div></div>
+      <div class="plat"><div class="logo tall"><img src="images/logos/pbirs.png" alt=""></div><b>Power BI Report Server<span class="new-badge">NEW</span></b><div class="chips"><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="new">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>新增的两项</h2>
+      <p class="deck">为无法上云的报表，以及无法逐一开设账号的用户。</p>
+    </div>
+
+    <article class="story">
+      <div class="story-media"><img src="images/hero/pbirs.jpg" alt="在 ViewRingo 门户标签页中打开的 Power BI Report Server 报表" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="story-head"><span class="ico ico-box"><i class="fa-solid fa-building-shield"></i></span><h3>Power BI Report Server<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">在网络隔离与数据主权环境中，无需迁移上云即可整合 BI。</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>同时支持 PBIX · RDL</b> — 自动识别交互式与分页报表</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>沿用现有 AD 权限</b> — Windows 集成认证（Kerberos · NTLM）</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>层级树注册</b> — 将 PBIRS 文件夹结构映射到门户菜单</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="story flip">
+      <div class="story-media"><img src="images/hero/databricks.jpg" alt="在 ViewRingo 门户中打开的 Databricks AI/BI 仪表板" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="story-head"><span class="ico ico-box"><i class="fa-solid fa-bolt"></i></span><h3>Databricks AI/BI Dashboard<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">无需 Databricks 账号，直接在门户中查看仪表板。</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>无需账号即可查看</b> — External Viewer 嵌入</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>按用户签发令牌</b> — 仅将权限受限的令牌下发到浏览器</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>管理员自动映射</b> — 自动获取已发布仪表板列表</span></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec" id="ai">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>在门户内运行的 AI 分析</h2>
+      <p class="deck">在门户的认证与权限体系内，提供自然语言查询与界面摘要。</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="ico ico-box"><i class="fa-solid fa-comments"></i></span>
+        <h3>Databricks Genie Agents</h3>
+        <p class="lead">用自然语言提问，即可获得附带依据 SQL 与图表的回答。</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>两种模式</b> — 快速回答与深度分析</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>依据可追溯</b> — 生成的 SQL · 分析步骤 · 图表</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>保持用户权限</b> — 仅限于用户自身权限范围</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico ico-box"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+        <h3>ViewRingo Data Assistant</h3>
+        <p class="lead">直接总结当前所看的界面，并用自然语言查询数据。</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>界面摘要</b> — 一键完成，权限之外的报表不会被渲染</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>NL2SQL</b> — MSSQL · PostgreSQL · Oracle</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>经由服务器</b> — 所有请求均经过门户服务器</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico ico-box"><i class="fa-solid fa-diagram-project"></i></span>
+        <h3>语义层</h3>
+        <p class="lead">准确性来自经过审核的上下文，而非模型本身。</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>人工审核的语义层</b> — 说明 · 同义词 · 指标 · 关系</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>黄金集回归测试</b> — 定期检查答案是否发生反转</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>执行前 SQL 校验</b> — 提前拦截不存在的列与语法错误</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-2" id="governance">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>数字的来源，以及留存的使用记录</h2>
+    </div>
+    <div class="gov">
+      <div class="gov-col">
+        <div class="head"><span class="ico ico-box"><i class="fa-solid fa-sitemap"></i></span><h3>数据血缘<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">这个数字从哪里来、改动后会影响什么 — 跨 BI 工具，一屏呈现。</p>
+        <div class="chain" aria-label="数据血缘链示例">
+          <span class="node"><em>报表</em><b>Sales Overview</b></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>图表</em><b>月度销售趋势</b></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>数据集</em><code>SALES_MART</code></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>表</em><code>SL_TRX</code></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>列</em><code>NET_AMT</code></span>
+        </div>
+        <p class="note" style="margin-top:12px">采集支持：Superset · Tableau · Qlik · Power BI · Databricks · PBIRS（Longview 按设计不纳入）</p>
+      </div>
+      <div class="gov-col">
+        <div class="head"><span class="ico ico-box"><i class="fa-solid fa-clipboard-list"></i></span><h3>活动日志 · 审计<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">谁在何时查看了哪份报表 — 以指标和证据呈现。</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>各工具使用 KPI</b> — 使用趋势与查看占比</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>识别未使用报表</b> — 清理长期无人查看的资产</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>导出 Excel 审计证据</b> — 行为日志作为审计材料</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>选择 ViewRingo 的理由</h2>
+    </div>
+    <div class="feats">
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-link"></i></span><div><b>8 种现有 BI 合而为一</b><span class="sub">Power BI · Tableau · Qlik · Superset · Longview · MicroStrategy · Databricks · PBIRS</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-piggy-bank"></i></span><div><b>保护既有投资</b><span class="sub">无需更换 BI 即可接入门户，新 BI 以同样方式扩展</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-window-restore"></i></span><div><b>统一 UX</b><span class="sub">无论何种工具，都享有同样的导航、菜单与分享体验</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-shield-halved"></i></span><div><b>统一治理</b><span class="sub">基于策略的权限组与审计日志</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-brain"></i></span><div><b>Enterprise AI Analytics</b><span class="sub">在门户内使用 Genie 与 Data Assistant</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-cloud-sun"></i></span><div><b>Cloud · On-Premise 一体化</b><span class="sub">同时整合 SaaS BI 与本地报表服务器</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="compare">
+  <div class="wrap">
+    <p class="q">“能一次同时询问 Tableau 报表和 Power BI 报表吗？”</p>
+    <p class="note" style="color:var(--on-dark-2)">各厂商内置 AI 的回答都是“否”— 原因不在性能，而在设计边界。ViewRingo 与众不同。</p>
+    <div class="three">
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-arrows-left-right"></i></span><div><h3>跨越工具</h3><p>一次查询 8 种 BI 的报表</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-lock"></i></span><div><h3>在封闭网络中运行</h3><p>可在本地与封闭网络中运行</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-sliders"></i></span><div><h3>模型由客户自选</h3><p>接入客户自有的 LLM</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-2" id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>实施案例</h2>
+      <p class="deck">两家客户均通过企业门户 SSO 进入，并按 ViewRingo 门户的菜单与权限查看报表。</p>
+    </div>
+    <div class="cases">
+      <article class="case"><span class="ico ico-box"><i class="fa-solid fa-cloud"></i></span><div><p class="env">H 公司 · Azure</p><h3>Power BI 单一门户</h3><p>从 1 种 BI 起步，新增工具只需注册菜单即可扩展。</p></div></article>
+      <article class="case"><span class="ico ico-box"><i class="fa-solid fa-server"></i></span><div><p class="env on">L 公司 · On-Premise</p><h3>Tableau · Longview 统一门户</h3><p>以一个门户元数据库（支持 SQL Server · PostgreSQL）统一了两种工具的菜单与权限。</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <h2 style="font-size:clamp(1.6rem,3vw,var(--t-2xl))">联系我们</h2>
+        <p class="deck" style="margin-top:14px;color:var(--ink-2)">请告知您的部署环境与所用 BI 工具，我们将回复配置方案。</p>
+        <p class="note" style="margin-top:20px">ViewRingo Enterprise Analytics Portal<br>Product Introduction v2.3 · 2026.09</p>
+      </div>
+      <div>
+        <form id="contact-form" data-sending="发送中..." data-sent="您的消息已成功发送。" data-failed="消息发送失败，请稍后重试。错误：">
+          <div class="form-field"><label for="name">姓名</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+          <div class="form-field"><label for="email">电子邮箱</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+          <div class="form-field"><label for="message">留言</label><textarea id="message" name="message" rows="5" required></textarea></div>
+          <button type="submit" class="btn-submit"><span class="ico"><i class="fa-solid fa-paper-plane"></i></span>发送消息</button>
+        </form>
+        <p class="direct">或直接联系： <a href="mailto:support@viewringo.com">support@viewringo.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <img src="images/logos/viewringo.png" alt="ViewRingo">
+    <p class="meta"><b>&copy; 2025 ViewRingo. All rights reserved.</b>ViewRingo | Enterprise Analytics Portal | v2.3</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

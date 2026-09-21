@@ -1,193 +1,388 @@
 <!DOCTYPE html>
-<html lang="ko" data-lang="ko">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViewRingo - BI 경험을 향상시키세요</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHQVKQ58P6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ViewRingo — Enterprise Analytics Portal</title>
+<meta name="description" content="ViewRingo Enterprise Analytics Portal — 사용자와 BI·Analytics 플랫폼 사이의 공통 계층. 기존 BI를 바꾸지 않고, 하나의 사용자 경험과 보안 체계로 통합합니다.">
+<link rel="canonical" href="https://www.viewringo.com/index_ko.html">
+<link rel="alternate" hreflang="en" href="https://www.viewringo.com/index.html">
+<link rel="alternate" hreflang="ko" href="https://www.viewringo.com/index_ko.html">
+<link rel="alternate" hreflang="ja" href="https://www.viewringo.com/index_ja.html">
+<link rel="alternate" hreflang="zh" href="https://www.viewringo.com/index_zh.html">
+<link rel="alternate" hreflang="x-default" href="https://www.viewringo.com/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ViewRingo — Enterprise Analytics Portal">
+<meta property="og:description" content="기존 BI를 바꾸지 않고, 하나의 사용자 경험과 보안 체계로 통합합니다. 8개 BI 플랫폼 · Cloud &amp; On-Premise · SSO · Governance · AI Analytics">
+<meta property="og:image" content="https://www.viewringo.com/images/hero/powerbi.jpg">
+<meta property="og:url" content="https://www.viewringo.com/index_ko.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" crossorigin="anonymous"></script>
+<link href="css/style.css" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WHQVKQ58P6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-WHQVKQ58P6');
-    </script>
+    gtag('config', 'G-WHQVKQ58P6');
+</script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-chart-pie me-2"></i>ViewRingo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">홈</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">회사 소개</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">기능</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">문의하기</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            언어
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="index.html" data-lang="en">English</a></li>
-                            <li><a class="dropdown-item" href="index_ko.html" data-lang="ko">한국어</a></li>
-                            <li><a class="dropdown-item" href="index_zh.html" data-lang="zh">中文</a></li>
-                            <li><a class="dropdown-item" href="index_ja.html" data-lang="ja">日本語</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
 
-    <section id="home" class="hero-section d-flex align-items-center text-center text-white position-relative">
-        <div class="sliding-background-container">
-            <img src="images/powerbi.png" alt="Power BI 보고서" class="sliding-background-image" data-tool-name="Power BI">
-            <img src="images/tableau.png" alt="Tableau 보고서" class="sliding-background-image" data-tool-name="Tableau">
-            <img src="images/qlik.png" alt="Qlik 보고서" class="sliding-background-image" data-tool-name="Qlik">
-            <img src="images/superset.png" alt="Superset 보고서" class="sliding-background-image" data-tool-name="Superset">
-            <img src="images/longview.jpg" alt="Longview 보고서" class="sliding-background-image" data-tool-name="Longview">
-            <img src="images/microstrategy.png" alt="MicroStrategy 보고서" class="sliding-background-image" data-tool-name="MicroStrategy">
-            <img src="images/powerbi.png" alt="Power BI 보고서" class="sliding-background-image" data-tool-name="Power BI"> <!-- Seamless loop를 위해 첫 번째 이미지를 복제 -->
-        </div>
-        <div class="overlay"></div>
-        <div class="container hero-content position-relative z-1">
-            <span id="current-bi-tool-label" class="bi-tool-label animate__animated animate__fadeInDown animate__delay-0-5s"></span>
-            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">비즈니스 인텔리전스를 통합하세요.</h1>
-            <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s">ViewRingo로 의사결정을 단순화하세요.</p>
-            <a href="#features" class="btn btn-primary btn-lg mt-4 animate__animated animate__zoomIn animate__delay-2s">기능 살펴보기 <i class="fas fa-arrow-right ms-2"></i></a>
-        </div>
-    </section>
+<header class="nav" id="siteNav">
+  <div class="nav-in">
+    <a class="brand" href="#home" aria-label="ViewRingo 홈"><img src="images/logos/viewringo.png" alt="ViewRingo — Data Insight in one place"></a>
+    <button class="nav-burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="메뉴 열기" data-label-open="메뉴 열기" data-label-close="메뉴 닫기"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#platforms">플랫폼</a></li>
+      <li><a href="#ai">AI 분석</a></li>
+      <li><a href="#governance">거버넌스</a></li>
+      <li><a href="#cases">사례</a></li>
+      <li><a href="#contact">문의</a></li>
+      <li>
+        <details class="lang" id="langBox">
+          <summary>한국어</summary>
+          <ul class="lang-menu">
+            <li><a href="index.html" hreflang="en">English</a></li>
+            <li><a href="index_ko.html" hreflang="ko" aria-current="true">한국어</a></li>
+            <li><a href="index_zh.html" hreflang="zh">中文</a></li>
+            <li><a href="index_ja.html" hreflang="ja">日本語</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a class="nav-cta" href="#contact">문의하기</a></li>
+    </ul>
+  </div>
+</header>
 
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">ViewRingo 소개</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="images/about-us.png" alt="회사 소개" class="img-fluid rounded shadow-lg">
-                </div>
-                <div class="col-lg-6">
-                    <p class="lead">ViewRingo는 Power BI, Tableau, Qlik, Superset, MicroStrategy, Longview 등 다양한 BI 도구를 하나의 통합된 UI에서 관리하고, 인증 및 권한체계까지 일관되게 제공하는 **BI 포털 플랫폼**입니다.</p>
-                    <p>주요 특징으로는 여러 BI 도구의 보고서를 통합하여 사용자 편의성을 극대화하고, 통합 인증, 메뉴, 권한 관리 체계를 제공하며, 일관된 UX 및 개인화 기능(테마, 즐겨찾기, 시작페이지)을 제공합니다. 또한, AI 기반 Co-Pilot (NL2SQL 분석 비서)을 실험적으로 지원합니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<main id="main">
 
-    <section id="features" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">데이터의 힘을 잠금 해제하세요</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-cubes fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">통합 BI 도구 통합</h5>
-                            <p class="card-text"><strong>Power BI, Tableau, Qlik, Superset, Longview, MicroStrategy</strong>를 포함한 선도적인 BI 도구를 원활하게 통합하고 관리합니다. 단일하고 직관적인 인터페이스에서 모든 보고서와 대시보드에 액세스하여 사용자 편의성을 극대화합니다.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">중앙 집중식 보안 및 액세스</h5>
-                            <p class="card-text">통합된 모든 BI 도구에 대해 강력하고 중앙 집중식 인증 및 권한 부여 시스템을 활용합니다. 사용자 액세스 제어를 단순화하고 일관된 정책으로 데이터 보안 태세를 강화합니다.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-users-cog fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">포괄적인 관리</h5>
-                            <p class="card-text">전체 BI 에코시스템에서 사용자(자동/다중 등록, 비밀번호 관리), 메뉴(BI 도구 보고서 등록 UI), 권한(그룹, 매트릭스)을 효율적으로 관리합니다. 활동 추적을 위한 모니터링 로그를 포함합니다.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">최첨단 기술</h5>
-                            <p class="card-text">ASP.NET Core(.NET 8.0)를 기반으로 구축되었으며, 동적 프런트엔드 서비스를 위한 TypeScript, AdminLTE 기반 Razor 뷰, 고성능 데이터 액세스를 위한 Dapper를 사용하여 확장성과 안정성을 보장합니다. 멀티 디바이스 지원을 위한 HTML5 기반입니다.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">유연한 데이터 인프라</h5>
-                            <p class="card-text">SQL Server 및 PostgreSQL을 기본적으로 지원하며, Oracle 및 MySQL 지원도 계획되어 있습니다. 이는 진화하는 데이터 인프라 요구 사항에 대한 탁월한 유연성을 제공합니다.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">고급 분석 및 통찰력</h5>
-                            <p class="card-text">통합을 넘어 ViewRingo는 실험적인 AI 기반 Co-Pilot (NL2SQL 분석 비서)을 포함한 더 깊은 분석을 위한 도구를 제공하여 사용자가 의미 있는 통찰력을 추출하고 자신 있게 데이터 기반 의사결정을 내릴 수 있도록 합니다.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-readout">
+      <p class="readout-row"><span class="live-dot" aria-hidden="true"></span><span class="hero-tool" id="heroTool">Power BI</span></p>
+      <div class="hero-ticks" id="heroTicks" role="group" aria-label="화면에 보이는 BI 플랫폼 선택"></div>
+    </div>
+    <h1>Enterprise<br>Analytics&nbsp;Portal.</h1>
+    <p class="hero-deck">BI 통합을 넘어, 사용자와 BI·Analytics 플랫폼 사이의 공통 계층.</p>
+    <p class="hero-sub">기존 BI를 바꾸지 않고, 하나의 사용자 경험과 보안 체계로 통합합니다.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#contact">문의하기</a>
+      <a class="btn btn-ghost" href="#about">기능 보기</a>
+    </div>
+    <p class="hero-keys"><span class="hero-keys-lead">Replace your BI tools? No. Unify them.</span> · 8개 BI 플랫폼 · Cloud &amp; On-Premise · SSO · Governance · AI Analytics</p>
+  </div>
 
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">문의하기</h2>
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <p class="text-center lead">BI 환경을 변화시킬 준비가 되셨습니까? ViewRingo가 조직에 어떻게 힘을 실어줄 수 있는지 알아보려면 지금 문의하십시오.</p>
-                    <form id="contact-form">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">이름</label>
-                            <input type="text" class="form-control form-control-lg" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">이메일 주소</label>
-                            <input type="email" class="form-control form-control-lg" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">메시지</label>
-                            <textarea class="form-control form-control-lg" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-lg">메시지 보내기 <i class="fas fa-paper-plane ms-2"></i></button>
-                        </div>
-                    </form>
-                    <p class="text-center mt-4 lead">또는 다음으로 직접 연락하십시오: <a href="mailto:support@viewringo.com" class="text-primary fw-bold">support@viewringo.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="hero-stage">
+    <div class="hero-track" id="heroTrack">
+      <img class="hero-shot" src="images/hero/powerbi.jpg" data-tool="Power BI" alt="ViewRingo 포털에서 열린 Power BI 매출 대시보드" fetchpriority="high" decoding="async">
+      <img class="hero-shot" src="images/hero/tableau.jpg" data-tool="Tableau" alt="ViewRingo 포털에서 열린 Tableau 수익성 개요 보고서" decoding="async">
+      <img class="hero-shot" src="images/hero/qlik.jpg" data-tool="Qlik Sense" alt="ViewRingo 포털에서 열린 Qlik Sense 판매 분석 시트" decoding="async">
+      <img class="hero-shot" src="images/hero/superset.jpg" data-tool="Apache Superset" alt="ViewRingo 포털에서 열린 Apache Superset 인구 지표 대시보드" decoding="async">
+      <img class="hero-shot" src="images/hero/microstrategy.jpg" data-tool="MicroStrategy" alt="ViewRingo 포털에서 열린 MicroStrategy 매장 실적 도시에(Dossier) 화면" decoding="async">
+      <img class="hero-shot" src="images/hero/databricks.jpg" data-tool="Databricks" alt="ViewRingo 포털에서 열린 Databricks AI/BI 대시보드" decoding="async">
+      <img class="hero-shot" src="images/hero/pbirs.jpg" data-tool="Power BI Report Server" alt="ViewRingo 포털에서 열린 Power BI Report Server 페이지 보고서" decoding="async">
+      <img class="hero-shot" src="images/hero/powerbi.jpg" data-tool="Power BI" alt="" aria-hidden="true" decoding="async">
+    </div>
+  </div>
+  <div class="hero-scrim"></div>
 
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2025 ViewRingo. 모든 권리 보유.</p>
-        </div>
-    </footer>
+  <div class="hero-plinth">
+    <div class="plinth-in">
+      <span class="plogo"><img src="images/logos/powerbi.png" alt="Power BI"></span>
+      <span class="plogo tall"><img src="images/logos/tableau.png" alt="Tableau"></span>
+      <span class="plogo tall"><img src="images/logos/qlik.png" alt="Qlik Sense"></span>
+      <span class="plogo"><img src="images/logos/superset.png" alt="Apache Superset"></span>
+      <span class="plogo"><img src="images/logos/longview.png" alt="Longview"></span>
+      <span class="plogo"><img src="images/logos/microstrategy.png" alt="MicroStrategy"></span>
+      <span class="plogo"><img src="images/logos/databricks.png" alt="Databricks"></span>
+      <span class="plogo tall"><img src="images/logos/pbirs.png" alt="Power BI Report Server"></span>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="js/script.js"></script>
+<div class="band" aria-label="ViewRingo 핵심 4가지">
+  <div class="band-in">
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-layer-group"></i></span><div><b>BI 플랫폼 8종</b><span class="sub">단일 포털 통합</span></div></div>
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-cloud"></i></span><div><b>Cloud · On-Premise</b><span class="sub">두 환경 모두 지원</span></div></div>
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-key"></i></span><div><b>SSO 단일 인증</b><span class="sub">포털 권한으로 일원화</span></div></div>
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-wand-magic-sparkles"></i></span><div><b>AI 분석 내장</b><span class="sub">Genie · Data Assistant</span></div></div>
+  </div>
+</div>
+
+<section class="sec sec-2" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>왜 지금 Enterprise Analytics Portal인가</h2>
+      <p class="deck">BI는 부서마다 늘어나는데, 사용자와 관리자는 그 사이를 오가며 같은 일을 반복합니다.</p>
+    </div>
+    <div class="items">
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-cubes-stacked"></i></span><div><h3>도구는 늘어난다</h3><p>부서·계열사별 개별 도입이 누적되어 한 기업 안에 서로 다른 BI가 공존합니다.</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-user-lock"></i></span><div><h3>권한은 갈라진다</h3><p>도구마다 계정과 권한 체계가 달라, 같은 사람에게 같은 범위를 주는 일도 여러 번 반복합니다.</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-magnifying-glass-chart"></i></span><div><h3>근거는 사라진다</h3><p>보고서 숫자가 어느 테이블에서 왔는지, 바꾸면 무엇이 깨지는지 답할 수단이 없습니다.</p></div></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>86%</b><span class="sub">조직이 BI 도구를 2종 이상 사용</span><small>Forrester 조사 · Zoho 인용</small></div>
+      <div class="stat"><b>96%</b><span class="sub">자연어 데이터 질의로 성과 향상을 기대</span><small>Salesforce 조사 · 국내 500사 포함, 2026</small></div>
+      <p class="answer">도구를 줄이지 않고 포털을 통합합니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>기존 BI 위에 올리는 공통 계층</h2>
+      <p class="deck">BI 도구가 추가되어도 사용자 경험·인증·권한·메뉴·로그 체계는 그대로 유지됩니다.</p>
+    </div>
+    <div class="items" style="margin-bottom:clamp(28px,3.4vw,40px)">
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-table-columns"></i></span><div><h3>기존 BI 그대로, 하나의 포털</h3><p>Power BI · Tableau · Qlik Sense · Superset · Longview · MicroStrategy · Databricks · PBIRS를 단일 URL, 단일 화면에서.</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-shield-halved"></i></span><div><h3>하나의 인증과 권한</h3><p>정책 기반 권한그룹으로 접근을 일원화하고, 모든 접근은 활동 로그로 남깁니다.</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-robot"></i></span><div><h3>포털 안의 AI Analytics</h3><p>Databricks Genie와 Data Assistant를 포털 권한 체계 안에서 사용합니다.</p></div></div>
+    </div>
+<div class="ab" role="group" aria-label="AS-IS 흩어진 BI 자산에서 TO-BE ViewRingo 하나의 포털로">
+  <div class="ab-card">
+    <span class="ab-tag">AS-IS</span>
+    <p class="ab-h">흩어진 BI 자산</p>
+    <div class="ring" aria-hidden="true">
+      <div class="ring-tile"><img src="images/logos/powerbi.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/tableau.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/qlik.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/superset.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/microstrategy.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/longview.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/databricks.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/pbirs.png" alt=""></div>
+      <div class="ring-center"><b>8<small>종</small></b><span class="sub">서로 다른 주소와 계정</span></div>
+    </div>
+    <p class="ab-cap">도구마다 다른 주소 · 다른 UI · 다른 계정과 권한</p>
+  </div>
+
+  <div class="ab-arrow" aria-hidden="true">
+    <svg viewBox="0 0 72 88"><path d="M0 22 H40 V0 L72 44 L40 88 V66 H0 Z" fill="var(--ring-accent)"/></svg>
+    <span>ViewRingo<br>통합 환경</span>
+  </div>
+
+  <div class="ab-card is-to">
+    <span class="ab-tag">TO-BE</span>
+    <p class="ab-h">ViewRingo Enterprise Analytics Portal</p>
+    <img class="ab-shot" src="images/hero/tableau.jpg" alt="ViewRingo 포털 탭에서 열린 Tableau 보고서" loading="lazy">
+    <div class="ab-logos" aria-hidden="true">
+      <span><img src="images/logos/powerbi.png" alt=""></span><span><img src="images/logos/tableau.png" alt=""></span>
+      <span><img src="images/logos/qlik.png" alt=""></span><span><img src="images/logos/superset.png" alt=""></span>
+      <span><img src="images/logos/longview.png" alt=""></span><span><img src="images/logos/microstrategy.png" alt=""></span>
+      <span><img src="images/logos/databricks.png" alt=""></span><span><img src="images/logos/pbirs.png" alt=""></span>
+    </div>
+    <p class="ab-cap">하나의 주소 · 하나의 UI · 하나의 인증과 권한</p>
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="sec sec-2" id="platforms">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>지원하는 BI 플랫폼 8종</h2>
+      <p class="deck">벤더 공식 임베딩·인증 방식을 그대로 사용하므로 기존 보고서 권한과 감사 체계가 유지됩니다.</p>
+    </div>
+    <div class="plat-grid">
+      <div class="plat"><div class="logo"><img src="images/logos/powerbi.png" alt=""></div><b>Power BI</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span></div></div>
+      <div class="plat"><div class="logo tall"><img src="images/logos/tableau.png" alt=""></div><b>Tableau</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo tall"><img src="images/logos/qlik.png" alt=""></div><b>Qlik Sense</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/superset.png" alt=""></div><b>Apache Superset</b><div class="chips"><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/longview.png" alt=""></div><b>Longview</b><div class="chips"><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/microstrategy.png" alt=""></div><b>MicroStrategy</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/databricks.png" alt=""></div><b>Databricks<span class="new-badge">NEW</span></b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span></div></div>
+      <div class="plat"><div class="logo tall"><img src="images/logos/pbirs.png" alt=""></div><b>Power BI Report Server<span class="new-badge">NEW</span></b><div class="chips"><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="new">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>이번에 더해진 두 가지</h2>
+      <p class="deck">클라우드로 보낼 수 없는 보고서와, 계정을 나눠줄 수 없는 사용자를 위해.</p>
+    </div>
+
+    <article class="story">
+      <div class="story-media"><img src="images/hero/pbirs.jpg" alt="ViewRingo 포털 탭에서 열린 Power BI Report Server 보고서" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="story-head"><span class="ico ico-box"><i class="fa-solid fa-building-shield"></i></span><h3>Power BI Report Server<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">망분리·데이터 주권 환경에서, 클라우드 전환 없이 BI를 통합합니다.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>PBIX · RDL 동시 지원</b> — 대화형과 페이지 보고서를 자동 식별</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>기존 AD 권한 그대로</b> — Windows 통합 인증(Kerberos · NTLM)</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>계층 트리 등록</b> — PBIRS 폴더 구조를 포털 메뉴에 반영</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="story flip">
+      <div class="story-media"><img src="images/hero/databricks.jpg" alt="ViewRingo 포털에서 열린 Databricks AI/BI 대시보드" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="story-head"><span class="ico ico-box"><i class="fa-solid fa-bolt"></i></span><h3>Databricks AI/BI Dashboard<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">Databricks 계정 없이, 포털에서 바로 대시보드를 봅니다.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>계정 없이 조회</b> — External Viewer 임베딩</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>사용자별 토큰</b> — 권한 범위가 제한된 토큰만 브라우저로</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>관리자 자동 매핑</b> — 게시된 대시보드 목록을 자동 조회</span></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec" id="ai">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>포털 안에서 움직이는 AI 분석</h2>
+      <p class="deck">자연어 질의와 화면 요약을 포털 인증·권한 체계 안에서 제공합니다.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="ico ico-box"><i class="fa-solid fa-comments"></i></span>
+        <h3>Databricks Genie Agents</h3>
+        <p class="lead">자연어로 질문하면 근거 SQL과 차트까지 함께 답합니다.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>두 가지 모드</b> — 빠른 답변, 심층 분석</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>근거 추적</b> — 생성 SQL · 분석 단계 · 차트</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>사용자 권한 유지</b> — 본인 권한 범위 안에서만</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico ico-box"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+        <h3>ViewRingo Data Assistant</h3>
+        <p class="lead">보고 있는 화면을 그대로 요약하고, 자연어로 데이터를 묻습니다.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>화면 요약</b> — 클릭 한 번, 권한 밖 보고서는 그려지지 않음</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>NL2SQL</b> — MSSQL · PostgreSQL · Oracle</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>서버 경유</b> — 모든 요청은 포털 서버를 지남</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico ico-box"><i class="fa-solid fa-diagram-project"></i></span>
+        <h3>시맨틱 레이어</h3>
+        <p class="lead">정확도는 모델이 아니라 검수된 문맥에서 나옵니다.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>사람이 검수한 의미층</b> — 설명 · 동의어 · 지표 · 관계</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>골든셋 회귀 시험</b> — 답이 뒤집히는지 주기 확인</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>실행 전 SQL 검증</b> — 없는 컬럼 · 문법 오류를 미리 차단</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-2" id="governance">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>숫자의 출처와, 남는 사용 기록</h2>
+    </div>
+    <div class="gov">
+      <div class="gov-col">
+        <div class="head"><span class="ico ico-box"><i class="fa-solid fa-sitemap"></i></span><h3>데이터 계보<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">이 숫자가 어디서 왔고, 바꾸면 무엇이 깨지는지 — BI 도구를 가로질러 한 화면에서.</p>
+        <div class="chain" aria-label="계보 체인 예시">
+          <span class="node"><em>리포트</em><b>Sales Overview</b></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>차트</em><b>월별 매출 추이</b></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>데이터셋</em><code>SALES_MART</code></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>테이블</em><code>SL_TRX</code></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>컬럼</em><code>NET_AMT</code></span>
+        </div>
+        <p class="note" style="margin-top:12px">수집 지원: Superset · Tableau · Qlik · Power BI · Databricks · PBIRS (Longview는 설계상 제외)</p>
+      </div>
+      <div class="gov-col">
+        <div class="head"><span class="ico ico-box"><i class="fa-solid fa-clipboard-list"></i></span><h3>활동 로그 · 감사<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">누가 언제 어떤 보고서를 봤는지를 지표와 증적으로.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>도구별 사용 KPI</b> — 이용 추이와 조회 비중</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>미사용 보고서 식별</b> — 장기 미조회 자산 정리</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>엑셀 증적 반출</b> — 행위 로그를 감사 자료로</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>ViewRingo를 선택하는 이유</h2>
+    </div>
+    <div class="feats">
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-link"></i></span><div><b>기존 BI 8종을 하나로</b><span class="sub">Power BI · Tableau · Qlik · Superset · Longview · MicroStrategy · Databricks · PBIRS</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-piggy-bank"></i></span><div><b>기존 투자 보호</b><span class="sub">BI 교체 없이 포털에 연결, 새 BI도 같은 방식으로 확장</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-window-restore"></i></span><div><b>하나의 UX</b><span class="sub">도구가 달라도 같은 탐색·메뉴·공유 경험</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-shield-halved"></i></span><div><b>통합 Governance</b><span class="sub">정책 기반 권한그룹과 감사 로그</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-brain"></i></span><div><b>Enterprise AI Analytics</b><span class="sub">Genie와 Data Assistant를 포털 안에서</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-cloud-sun"></i></span><div><b>Cloud · On-Premise 통합</b><span class="sub">SaaS BI와 온프레미스 리포트 서버를 동시에</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="compare">
+  <div class="wrap">
+    <p class="q">"Tableau 보고서와 Power BI 보고서를 한 번에 물어볼 수 있습니까?"</p>
+    <p class="note" style="color:var(--on-dark-2)">벤더 내장 AI의 답은 모두 아니오 — 성능이 아니라 설계 경계 때문입니다. ViewRingo는 다릅니다.</p>
+    <div class="three">
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-arrows-left-right"></i></span><div><h3>도구를 가로지르고</h3><p>BI 8종의 보고서를 한 번에 질의</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-lock"></i></span><div><h3>폐쇄망에서 돌며</h3><p>온프레미스 · 폐쇄망에서 실행</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-sliders"></i></span><div><h3>모델을 고객이 고릅니다</h3><p>고객 보유 LLM 연결</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-2" id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>구축 사례</h2>
+      <p class="deck">두 곳 모두 사내 Enterprise Portal에서 SSO로 진입해 ViewRingo 포털의 메뉴·권한으로 보고서를 봅니다.</p>
+    </div>
+    <div class="cases">
+      <article class="case"><span class="ico ico-box"><i class="fa-solid fa-cloud"></i></span><div><p class="env">H사 · Azure</p><h3>Power BI 단일 포털</h3><p>BI 1종으로 시작해, 도구 추가는 메뉴 등록만으로 확장합니다.</p></div></article>
+      <article class="case"><span class="ico ico-box"><i class="fa-solid fa-server"></i></span><div><p class="env on">L사 · On-Premise</p><h3>Tableau · Longview 통합 포털</h3><p>포털 메타 DB(SQL Server · PostgreSQL 지원) 하나로 두 도구의 메뉴와 권한을 일원화했습니다.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <h2 style="font-size:clamp(1.6rem,3vw,var(--t-2xl))">문의하기</h2>
+        <p class="deck" style="margin-top:14px;color:var(--ink-2)">도입 환경과 사용 중인 BI 도구를 알려주시면 구성안을 회신드립니다.</p>
+        <p class="note" style="margin-top:20px">ViewRingo Enterprise Analytics Portal<br>Product Introduction v2.3 · 2026.09</p>
+      </div>
+      <div>
+        <form id="contact-form" data-sending="보내는 중..." data-sent="메시지가 정상적으로 전송되었습니다." data-failed="메시지를 보내지 못했습니다. 잠시 후 다시 시도해 주세요. 오류:">
+          <div class="form-field"><label for="name">이름</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+          <div class="form-field"><label for="email">이메일 주소</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+          <div class="form-field"><label for="message">메시지</label><textarea id="message" name="message" rows="5" required></textarea></div>
+          <button type="submit" class="btn-submit"><span class="ico"><i class="fa-solid fa-paper-plane"></i></span>메시지 보내기</button>
+        </form>
+        <p class="direct">또는 직접 문의: <a href="mailto:support@viewringo.com">support@viewringo.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <img src="images/logos/viewringo.png" alt="ViewRingo">
+    <p class="meta"><b>&copy; 2025 ViewRingo. All rights reserved.</b>ViewRingo | Enterprise Analytics Portal | v2.3</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

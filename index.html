@@ -1,193 +1,388 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViewRingo - Elevate Your BI Experience</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHQVKQ58P6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ViewRingo — Enterprise Analytics Portal</title>
+<meta name="description" content="ViewRingo Enterprise Analytics Portal — the common layer between your users and your BI & analytics platforms. Keep your existing BI tools and unify them under one user experience and one security model.">
+<link rel="canonical" href="https://www.viewringo.com/index.html">
+<link rel="alternate" hreflang="en" href="https://www.viewringo.com/index.html">
+<link rel="alternate" hreflang="ko" href="https://www.viewringo.com/index.html">
+<link rel="alternate" hreflang="ja" href="https://www.viewringo.com/index_ja.html">
+<link rel="alternate" hreflang="zh" href="https://www.viewringo.com/index_zh.html">
+<link rel="alternate" hreflang="x-default" href="https://www.viewringo.com/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ViewRingo — Enterprise Analytics Portal">
+<meta property="og:description" content="Keep your existing BI tools and unify them under one user experience and one security model. 8 BI platforms · Cloud &amp; On-Premise · SSO · Governance · AI Analytics">
+<meta property="og:image" content="https://www.viewringo.com/images/hero/powerbi.jpg">
+<meta property="og:url" content="https://www.viewringo.com/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" crossorigin="anonymous"></script>
+<link href="css/style.css" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WHQVKQ58P6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-WHQVKQ58P6');
-    </script>
+    gtag('config', 'G-WHQVKQ58P6');
+</script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-chart-pie me-2"></i>ViewRingo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Language
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="index.html" data-lang="en">English</a></li>
-                            <li><a class="dropdown-item" href="index_ko.html" data-lang="ko">한국어</a></li>
-                            <li><a class="dropdown-item" href="index_zh.html" data-lang="zh">中文</a></li>
-                            <li><a class="dropdown-item" href="index_ja.html" data-lang="ja">日本語</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<a class="skip" href="#main">Skip to content</a>
 
-    <section id="home" class="hero-section d-flex align-items-center text-center text-white position-relative">
-        <div class="sliding-background-container">
-            <img src="images/powerbi.png" alt="Power BI Report" class="sliding-background-image" data-tool-name="Power BI">
-            <img src="images/tableau.png" alt="Tableau Report" class="sliding-background-image" data-tool-name="Tableau">
-            <img src="images/qlik.png" alt="Qlik Report" class="sliding-background-image" data-tool-name="Qlik">
-            <img src="images/superset.png" alt="Superset Report" class="sliding-background-image" data-tool-name="Superset">
-            <img src="images/longview.jpg" alt="Longview Report" class="sliding-background-image" data-tool-name="Longview">
-            <img src="images/microstrategy.png" alt="MicroStrategy Report" class="sliding-background-image" data-tool-name="MicroStrategy">
-            <img src="images/powerbi.png" alt="Power BI Report" class="sliding-background-image" data-tool-name="Power BI"> <!-- Duplicate first image for seamless loop -->
-        </div>
-        <div class="overlay"></div>
-        <div class="container hero-content position-relative z-1">
-            <span id="current-bi-tool-label" class="bi-tool-label animate__animated animate__fadeInDown animate__delay-0-5s"></span>
-            <h1 class="display-3 fw-bold animate__animated animate__fadeInDown">Unify Your Business Intelligence.</h1>
-            <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s">Simplify Your Decisions with ViewRingo.</p>
-            <a href="#features" class="btn btn-primary btn-lg mt-4 animate__animated animate__zoomIn animate__delay-2s">Explore Features <i class="fas fa-arrow-right ms-2"></i></a>
-        </div>
-    </section>
+<header class="nav" id="siteNav">
+  <div class="nav-in">
+    <a class="brand" href="#home" aria-label="ViewRingo home"><img src="images/logos/viewringo.png" alt="ViewRingo — Data Insight in one place"></a>
+    <button class="nav-burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu"><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Overview</a></li>
+      <li><a href="#platforms">Platforms</a></li>
+      <li><a href="#ai">AI Analytics</a></li>
+      <li><a href="#governance">Governance</a></li>
+      <li><a href="#cases">Cases</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <details class="lang" id="langBox">
+          <summary>English</summary>
+          <ul class="lang-menu">
+            <li><a href="index.html" hreflang="en" aria-current="true">English</a></li>
+            <li><a href="index_ko.html" hreflang="ko">한국어</a></li>
+            <li><a href="index_zh.html" hreflang="zh">中文</a></li>
+            <li><a href="index_ja.html" hreflang="ja">日本語</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a class="nav-cta" href="#contact">Contact us</a></li>
+    </ul>
+  </div>
+</header>
 
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">About ViewRingo</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="images/about-us.png" alt="About Us" class="img-fluid rounded-4 shadow-lg mx-auto d-block" style="width: 80%;">
-                </div>
-                <div class="col-lg-6">
-                    <p class="lead">ViewRingo is a **BI portal platform** designed to integrate various BI tools such as Power BI, Tableau, Qlik, Superset, MicroStrategy, and Longview into a single, unified UI. It provides consistent authentication and authorization systems across all integrated tools.</p>
-                    <p>Our core features include maximizing user convenience by integrating reports from multiple BI tools, offering unified authentication, menu, and authorization management, and providing consistent UX with personalization features like themes, favorites, and start pages. ViewRingo also experimentally supports an AI-based Co-Pilot (NL2SQL analysis assistant).</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<main id="main">
 
-    <section id="features" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">Unlock the Power of Your Data</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-cubes fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Unified BI Tool Integration</h5>
-                            <p class="card-text">Seamlessly integrate and manage leading BI tools including <strong>Power BI, Tableau, Qlik, Superset, Longview, and MicroStrategy</strong>. Access all your reports and dashboards from a single, intuitive interface, maximizing user convenience.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Centralized Security & Access</h5>
-                            <p class="card-text">Leverage a robust, centralized authentication and authorization system for all integrated BI tools. Simplify user access control and fortify your data security posture with consistent policies.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-users-cog fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Comprehensive Management</h5>
-                            <p class="card-text">Efficiently manage users (auto/multi-registration, password management), menus (BI tool report registration UI), and permissions (groups, matrix) across your entire BI ecosystem. Includes monitoring logs for activity tracking.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-code fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Cutting-Edge Technology</h5>
-                            <p class="card-text">Built on ASP.NET Core (.NET 8.0) with TypeScript for dynamic frontend services, AdminLTE-based Razor views, and Dapper for high-performance data access, ensuring scalability and reliability. HTML5 based for multi-device support.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Flexible Data Infrastructure</h5>
-                            <p class="card-text">Primary support for SQL Server and PostgreSQL, with planned support for Oracle and MySQL. This offers unparalleled flexibility for your evolving data infrastructure needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 shadow-sm border-0 feature-card">
-                        <div class="card-body text-center p-4">
-                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title fw-bold">Advanced Analytics & Insights</h5>
-                            <p class="card-text">Beyond integration, ViewRingo provides tools for deeper analytics, including experimental AI-based Co-Pilot (NL2SQL analysis assistant) for extracting meaningful insights and making data-driven decisions with confidence.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-readout">
+      <p class="readout-row"><span class="live-dot" aria-hidden="true"></span><span class="hero-tool" id="heroTool">Power BI</span></p>
+      <div class="hero-ticks" id="heroTicks" role="group" aria-label="Choose which BI platform is shown"></div>
+    </div>
+    <h1>Enterprise<br>Analytics&nbsp;Portal.</h1>
+    <p class="hero-deck">Beyond BI integration: the common layer between your users and your BI &amp; analytics platforms.</p>
+    <p class="hero-sub">Keep your existing BI tools. Unify them under one user experience and one security model.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#contact">Contact us</a>
+      <a class="btn btn-ghost" href="#about">See how it works</a>
+    </div>
+    <p class="hero-keys"><span class="hero-keys-lead">Replace your BI tools? No. Unify them.</span> · 8 BI platforms · Cloud &amp; On-Premise · SSO · Governance · AI Analytics</p>
+  </div>
 
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-bold">Get in Touch</h2>
-            <div class="row">
-                <div class="col-md-8 mx-auto">
-                    <p class="text-center lead">Ready to transform your BI landscape? Contact us today to learn how ViewRingo can empower your organization.</p>
-                    <form id="contact-form">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control form-control-lg" id="name" name="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control form-control-lg" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control form-control-lg" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-lg">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
-                        </div>
-                    </form>
-                    <p class="text-center mt-4 lead">Or reach out directly: <a href="mailto:sales@viewringo.com" class="text-primary fw-bold">sales@viewringo.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="hero-stage">
+    <div class="hero-track" id="heroTrack">
+      <img class="hero-shot" src="images/hero/powerbi.jpg" data-tool="Power BI" alt="Power BI sales dashboard opened in the ViewRingo portal" fetchpriority="high" decoding="async">
+      <img class="hero-shot" src="images/hero/tableau.jpg" data-tool="Tableau" alt="Tableau profitability overview opened in the ViewRingo portal" decoding="async">
+      <img class="hero-shot" src="images/hero/qlik.jpg" data-tool="Qlik Sense" alt="Qlik Sense sales analysis sheet opened in the ViewRingo portal" decoding="async">
+      <img class="hero-shot" src="images/hero/superset.jpg" data-tool="Apache Superset" alt="Apache Superset population dashboard opened in the ViewRingo portal" decoding="async">
+      <img class="hero-shot" src="images/hero/microstrategy.jpg" data-tool="MicroStrategy" alt="MicroStrategy store performance dossier opened in the ViewRingo portal" decoding="async">
+      <img class="hero-shot" src="images/hero/databricks.jpg" data-tool="Databricks" alt="Databricks AI/BI dashboard opened in the ViewRingo portal" decoding="async">
+      <img class="hero-shot" src="images/hero/pbirs.jpg" data-tool="Power BI Report Server" alt="Power BI Report Server paginated report opened in the ViewRingo portal" decoding="async">
+      <img class="hero-shot" src="images/hero/powerbi.jpg" data-tool="Power BI" alt="" aria-hidden="true" decoding="async">
+    </div>
+  </div>
+  <div class="hero-scrim"></div>
 
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2025 ViewRingo. All rights reserved.</p>
-        </div>
-    </footer>
+  <div class="hero-plinth">
+    <div class="plinth-in">
+      <span class="plogo"><img src="images/logos/powerbi.png" alt="Power BI"></span>
+      <span class="plogo tall"><img src="images/logos/tableau.png" alt="Tableau"></span>
+      <span class="plogo tall"><img src="images/logos/qlik.png" alt="Qlik Sense"></span>
+      <span class="plogo"><img src="images/logos/superset.png" alt="Apache Superset"></span>
+      <span class="plogo"><img src="images/logos/longview.png" alt="Longview"></span>
+      <span class="plogo"><img src="images/logos/microstrategy.png" alt="MicroStrategy"></span>
+      <span class="plogo"><img src="images/logos/databricks.png" alt="Databricks"></span>
+      <span class="plogo tall"><img src="images/logos/pbirs.png" alt="Power BI Report Server"></span>
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="js/script.js"></script>
+<div class="band" aria-label="Four ViewRingo essentials">
+  <div class="band-in">
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-layer-group"></i></span><div><b>8 BI platforms</b><span class="sub">Unified in one portal</span></div></div>
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-cloud"></i></span><div><b>Cloud · On-Premise</b><span class="sub">Both environments supported</span></div></div>
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-key"></i></span><div><b>Single sign-on</b><span class="sub">One permission model in the portal</span></div></div>
+    <div class="badge"><span class="ico ico-box"><i class="fa-solid fa-wand-magic-sparkles"></i></span><div><b>AI analytics built in</b><span class="sub">Genie · Data Assistant</span></div></div>
+  </div>
+</div>
+
+<section class="sec sec-2" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Why an Enterprise Analytics Portal, now</h2>
+      <p class="deck">BI tools multiply department by department, while users and admins shuttle between them repeating the same work.</p>
+    </div>
+    <div class="items">
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-cubes-stacked"></i></span><div><h3>Tools keep multiplying</h3><p>Department- and affiliate-level purchases pile up until several BI tools coexist in one company.</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-user-lock"></i></span><div><h3>Permissions fragment</h3><p>Each tool has its own accounts and permission model, so granting one person the same scope is done over and over.</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-magnifying-glass-chart"></i></span><div><h3>Provenance disappears</h3><p>There is no way to answer which table a report figure came from, or what breaks if it changes.</p></div></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>86%</b><span class="sub">of organizations use two or more BI tools</span><small>Forrester survey, cited by Zoho</small></div>
+      <div class="stat"><b>96%</b><span class="sub">expect better results from natural-language data queries</span><small>Salesforce survey incl. 500 Korean companies, 2026</small></div>
+      <p class="answer">Don't cut the tools. Unify the portal.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>A common layer on top of your existing BI</h2>
+      <p class="deck">Add another BI tool and the user experience, authentication, permissions, menus and logs stay exactly the same.</p>
+    </div>
+    <div class="items" style="margin-bottom:clamp(28px,3.4vw,40px)">
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-table-columns"></i></span><div><h3>Your BI as it is, in one portal</h3><p>Power BI · Tableau · Qlik Sense · Superset · Longview · MicroStrategy · Databricks · PBIRS on one URL, one screen.</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-shield-halved"></i></span><div><h3>One authentication, one set of permissions</h3><p>Policy-based permission groups unify access, and every access is written to the activity log.</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-robot"></i></span><div><h3>AI analytics inside the portal</h3><p>Databricks Genie and Data Assistant run inside the portal's permission model.</p></div></div>
+    </div>
+<div class="ab" role="group" aria-label="From scattered BI assets (as-is) to one ViewRingo portal (to-be)">
+  <div class="ab-card">
+    <span class="ab-tag">AS-IS</span>
+    <p class="ab-h">Scattered BI assets</p>
+    <div class="ring" aria-hidden="true">
+      <div class="ring-tile"><img src="images/logos/powerbi.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/tableau.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/qlik.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/superset.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/microstrategy.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/longview.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/databricks.png" alt=""></div>
+      <div class="ring-tile"><img src="images/logos/pbirs.png" alt=""></div>
+      <div class="ring-center"><b>8<small> tools</small></b><span class="sub">different addresses and accounts</span></div>
+    </div>
+    <p class="ab-cap">A different address, UI, account and permissions per tool</p>
+  </div>
+
+  <div class="ab-arrow" aria-hidden="true">
+    <svg viewBox="0 0 72 88"><path d="M0 22 H40 V0 L72 44 L40 88 V66 H0 Z" fill="var(--ring-accent)"/></svg>
+    <span>ViewRingo<br>unified environment</span>
+  </div>
+
+  <div class="ab-card is-to">
+    <span class="ab-tag">TO-BE</span>
+    <p class="ab-h">ViewRingo Enterprise Analytics Portal</p>
+    <img class="ab-shot" src="images/hero/tableau.jpg" alt="Tableau report opened in a ViewRingo portal tab" loading="lazy">
+    <div class="ab-logos" aria-hidden="true">
+      <span><img src="images/logos/powerbi.png" alt=""></span><span><img src="images/logos/tableau.png" alt=""></span>
+      <span><img src="images/logos/qlik.png" alt=""></span><span><img src="images/logos/superset.png" alt=""></span>
+      <span><img src="images/logos/longview.png" alt=""></span><span><img src="images/logos/microstrategy.png" alt=""></span>
+      <span><img src="images/logos/databricks.png" alt=""></span><span><img src="images/logos/pbirs.png" alt=""></span>
+    </div>
+    <p class="ab-cap">One address · one UI · one authentication and permission model</p>
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="sec sec-2" id="platforms">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>8 supported BI platforms</h2>
+      <p class="deck">Each vendor's official embedding and authentication is used as-is, so existing report permissions and audit trails are preserved.</p>
+    </div>
+    <div class="plat-grid">
+      <div class="plat"><div class="logo"><img src="images/logos/powerbi.png" alt=""></div><b>Power BI</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span></div></div>
+      <div class="plat"><div class="logo tall"><img src="images/logos/tableau.png" alt=""></div><b>Tableau</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo tall"><img src="images/logos/qlik.png" alt=""></div><b>Qlik Sense</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/superset.png" alt=""></div><b>Apache Superset</b><div class="chips"><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/longview.png" alt=""></div><b>Longview</b><div class="chips"><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/microstrategy.png" alt=""></div><b>MicroStrategy</b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+      <div class="plat"><div class="logo"><img src="images/logos/databricks.png" alt=""></div><b>Databricks<span class="new-badge">NEW</span></b><div class="chips"><span class="chip chip-cloud"><i class="fa-solid fa-cloud"></i>Cloud</span></div></div>
+      <div class="plat"><div class="logo tall"><img src="images/logos/pbirs.png" alt=""></div><b>Power BI Report Server<span class="new-badge">NEW</span></b><div class="chips"><span class="chip chip-onprem"><i class="fa-solid fa-server"></i>On-Prem</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="new">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Two new additions</h2>
+      <p class="deck">For reports that cannot leave the data center, and users who cannot be given accounts.</p>
+    </div>
+
+    <article class="story">
+      <div class="story-media"><img src="images/hero/pbirs.jpg" alt="Power BI Report Server report opened in a ViewRingo portal tab" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="story-head"><span class="ico ico-box"><i class="fa-solid fa-building-shield"></i></span><h3>Power BI Report Server<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">Unify BI without a cloud migration — even in air-gapped, data-sovereignty environments.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>PBIX and RDL together</b> — interactive and paginated reports detected automatically</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Existing AD permissions as-is</b> — Windows integrated authentication (Kerberos · NTLM)</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Hierarchical tree registration</b> — PBIRS folder structure mirrored in the portal menu</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="story flip">
+      <div class="story-media"><img src="images/hero/databricks.jpg" alt="Databricks AI/BI dashboard opened in the ViewRingo portal" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="story-head"><span class="ico ico-box"><i class="fa-solid fa-bolt"></i></span><h3>Databricks AI/BI Dashboard<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">View dashboards right in the portal — no Databricks account needed.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>No account required</b> — External Viewer embedding</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Per-user tokens</b> — only scope-limited tokens reach the browser</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Automatic admin mapping</b> — published dashboards listed automatically</span></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec" id="ai">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>AI analytics that run inside the portal</h2>
+      <p class="deck">Natural-language queries and on-screen summaries, delivered inside the portal's authentication and permission model.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="ico ico-box"><i class="fa-solid fa-comments"></i></span>
+        <h3>Databricks Genie Agents</h3>
+        <p class="lead">Ask in plain language and get the answer with its SQL and charts.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Two modes</b> — quick answers or deep analysis</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Traceable evidence</b> — generated SQL · analysis steps · charts</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>User permissions preserved</b> — only within the user's own scope</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico ico-box"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+        <h3>ViewRingo Data Assistant</h3>
+        <p class="lead">Summarize the screen you're looking at and ask your data questions in plain language.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Screen summary</b> — one click; reports outside your permissions are never rendered</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>NL2SQL</b> — MSSQL · PostgreSQL · Oracle</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Server-side only</b> — every request passes through the portal server</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico ico-box"><i class="fa-solid fa-diagram-project"></i></span>
+        <h3>Semantic layer</h3>
+        <p class="lead">Accuracy comes from reviewed context, not from the model.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Human-reviewed semantics</b> — descriptions · synonyms · metrics · relationships</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Golden-set regression tests</b> — checked on a schedule for answers that flip</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>SQL validated before it runs</b> — missing columns and syntax errors blocked up front</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-2" id="governance">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Where the numbers come from, and who used them</h2>
+    </div>
+    <div class="gov">
+      <div class="gov-col">
+        <div class="head"><span class="ico ico-box"><i class="fa-solid fa-sitemap"></i></span><h3>Data lineage<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">Where this number came from and what breaks if it changes — across BI tools, on one screen.</p>
+        <div class="chain" aria-label="Example lineage chain">
+          <span class="node"><em>Report</em><b>Sales Overview</b></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>Chart</em><b>Monthly sales trend</b></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>Dataset</em><code>SALES_MART</code></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>Table</em><code>SL_TRX</code></span><span class="arr"><i class="fa-solid fa-arrow-right"></i></span>
+          <span class="node"><em>Column</em><code>NET_AMT</code></span>
+        </div>
+        <p class="note" style="margin-top:12px">Collected from: Superset · Tableau · Qlik · Power BI · Databricks · PBIRS (Longview excluded by design)</p>
+      </div>
+      <div class="gov-col">
+        <div class="head"><span class="ico ico-box"><i class="fa-solid fa-clipboard-list"></i></span><h3>Activity log · audit<span class="new-badge">NEW</span></h3></div>
+        <p class="lead">Who viewed which report, and when — as metrics and as evidence.</p>
+        <ul class="bul">
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Usage KPIs per tool</b> — usage trends and share of views</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Unused reports identified</b> — retire assets nobody opens</span></li>
+          <li><span class="ico ico-mark"><i class="fa-solid fa-check"></i></span><span><b>Excel audit export</b> — activity logs as audit evidence</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Why teams choose ViewRingo</h2>
+    </div>
+    <div class="feats">
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-link"></i></span><div><b>8 BI tools, one portal</b><span class="sub">Power BI · Tableau · Qlik · Superset · Longview · MicroStrategy · Databricks · PBIRS</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-piggy-bank"></i></span><div><b>Existing investment protected</b><span class="sub">Connect without replacing BI; new tools join the same way</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-window-restore"></i></span><div><b>One UX</b><span class="sub">The same navigation, menus and sharing across every tool</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-shield-halved"></i></span><div><b>Unified governance</b><span class="sub">Policy-based permission groups and audit logs</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-brain"></i></span><div><b>Enterprise AI Analytics</b><span class="sub">Genie and Data Assistant inside the portal</span></div></div>
+      <div class="feat"><span class="ico ico-box"><i class="fa-solid fa-cloud-sun"></i></span><div><b>Cloud and on-premise, unified</b><span class="sub">SaaS BI and on-premise report servers together</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-dark" id="compare">
+  <div class="wrap">
+    <p class="q">"Can I ask about a Tableau report and a Power BI report in one question?"</p>
+    <p class="note" style="color:var(--on-dark-2)">Every vendor-built AI answers no — not for lack of capability, but because of where its boundaries are drawn. ViewRingo is different.</p>
+    <div class="three">
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-arrows-left-right"></i></span><div><h3>Across tools</h3><p>Query reports from 8 BI tools at once</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-lock"></i></span><div><h3>Inside closed networks</h3><p>Runs on-premise and in air-gapped networks</p></div></div>
+      <div class="item"><span class="ico ico-box"><i class="fa-solid fa-sliders"></i></span><div><h3>You choose the model</h3><p>Connect the LLM you already own</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-2" id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Case studies</h2>
+      <p class="deck">In both cases users enter via SSO from the corporate Enterprise Portal and view reports through ViewRingo's menus and permissions.</p>
+    </div>
+    <div class="cases">
+      <article class="case"><span class="ico ico-box"><i class="fa-solid fa-cloud"></i></span><div><p class="env">Company H · Azure</p><h3>Single Power BI portal</h3><p>Started with one BI tool; adding another is just a menu registration.</p></div></article>
+      <article class="case"><span class="ico ico-box"><i class="fa-solid fa-server"></i></span><div><p class="env on">Company L · On-Premise</p><h3>Tableau + Longview unified portal</h3><p>One portal metadata DB (SQL Server or PostgreSQL) unified the menus and permissions of both tools.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <h2 style="font-size:clamp(1.6rem,3vw,var(--t-2xl))">Contact us</h2>
+        <p class="deck" style="margin-top:14px;color:var(--ink-2)">Tell us about your environment and the BI tools you use, and we'll reply with a proposed configuration.</p>
+        <p class="note" style="margin-top:20px">ViewRingo Enterprise Analytics Portal<br>Product Introduction v2.3 · 2026.09</p>
+      </div>
+      <div>
+        <form id="contact-form" data-sending="Sending..." data-sent="Your message has been sent." data-failed="The message could not be sent. Please try again later. Error:">
+          <div class="form-field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+          <div class="form-field"><label for="email">Email address</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+          <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+          <button type="submit" class="btn-submit"><span class="ico"><i class="fa-solid fa-paper-plane"></i></span>Send message</button>
+        </form>
+        <p class="direct">Or email us directly: <a href="mailto:sales@viewringo.com">sales@viewringo.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <img src="images/logos/viewringo.png" alt="ViewRingo">
+    <p class="meta"><b>&copy; 2025 ViewRingo. All rights reserved.</b>ViewRingo | Enterprise Analytics Portal | v2.3</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
