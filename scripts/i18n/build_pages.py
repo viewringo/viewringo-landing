@@ -48,6 +48,8 @@ for code, (fname, lang, font, label, mail) in LANGS.items():
     s = s.replace('<a href="index_ko.html" hreflang="ko" aria-current="true">한국어</a>', '<a href="index_ko.html" hreflang="ko">한국어</a>')
     s = s.replace('<a href="%s" hreflang="%s">' % (fname, lang), '<a href="%s" hreflang="%s" aria-current="true">' % (fname, lang))
     s = s.replace('mailto:support@viewringo.com">support@viewringo.com', 'mailto:%s">%s' % (mail, mail))
+    # legal pages exist in Korean and English only; every non-Korean page links to the English versions
+    s = s.replace('href="privacy_ko.html"', 'href="privacy.html"').replace('href="terms_ko.html"', 'href="terms.html"')
     s = translate(s, code)
     # residue check: the only Korean allowed is the '한국어' item in the language menu
     left = [ln for ln in s.splitlines() if HANGUL.search(ln) and '>한국어</a>' not in ln]

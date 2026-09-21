@@ -181,4 +181,7 @@ STRINGS = {
 "메시지": ("Message", "メッセージ", "留言"),
 "메시지 보내기": ("Send message", "メッセージを送信", "发送消息"),
 "또는 직접 문의:": ("Or email us directly:", "または直接お問い合わせ:", "或直接联系："),
+# ---- footer legal links (pages exist in KO and EN; JA/ZH link to the EN pages) ----
+"개인정보 처리방침": ("Privacy Policy", "プライバシーポリシー", "隐私政策"),
+"이용약관": ("Terms of Service", "利用規約", "服务条款"),
 }
