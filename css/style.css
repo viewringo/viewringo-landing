@@ -186,6 +186,7 @@ span.ico{display:inline-flex;align-items:center;justify-content:center;flex:0 0 
 .plat .logo.tall img{max-height:30px}
 .plat b{font-size:var(--t-sm);font-weight:700}
 .plat .chips{display:flex;flex-wrap:wrap;gap:6px}
+.platform-note{margin-top:14px}
 
 /* story rows */
 .story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4.4vw,64px);align-items:center}
@@ -312,7 +313,7 @@ span.ico{display:inline-flex;align-items:center;justify-content:center;flex:0 0 
   display:flex;align-items:center;justify-content:center;padding:6px 8px;box-shadow:0 2px 8px rgba(12,26,46,.08)}
 .ring-tile img{max-width:100%;max-height:100%;object-fit:contain}
 /* 8 positions evenly on the circle (45° steps, radius 39% of the box), clockwise from the top,
-   matching slide order: Power BI (top), Tableau, Qlik, Superset, MicroStrategy (bottom), Longview, Databricks, PBIRS */
+   matching slide order: Power BI (top), Tableau, Qlik, Superset, Strategy (bottom), Longview, Databricks, PBIRS */
 .ring-tile:nth-child(1){--x:0;--y:-39}
 .ring-tile:nth-child(2){--x:27.6;--y:-27.6}
 .ring-tile:nth-child(3){--x:39;--y:0}

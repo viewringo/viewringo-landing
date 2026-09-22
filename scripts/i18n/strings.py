@@ -22,7 +22,7 @@ STRINGS = {
 "ViewRingo 포털에서 열린 Tableau 수익성 개요 보고서": ("Tableau profitability overview opened in the ViewRingo portal", "ViewRingoポータルで開いたTableauの収益性概要レポート", "在 ViewRingo 门户中打开的 Tableau 盈利概览报表"),
 "ViewRingo 포털에서 열린 Qlik Sense 판매 분석 시트": ("Qlik Sense sales analysis sheet opened in the ViewRingo portal", "ViewRingoポータルで開いたQlik Senseの販売分析シート", "在 ViewRingo 门户中打开的 Qlik Sense 销售分析工作表"),
 "ViewRingo 포털에서 열린 Apache Superset 인구 지표 대시보드": ("Apache Superset population dashboard opened in the ViewRingo portal", "ViewRingoポータルで開いたApache Supersetの人口指標ダッシュボード", "在 ViewRingo 门户中打开的 Apache Superset 人口指标仪表板"),
-"ViewRingo 포털에서 열린 MicroStrategy 매장 실적 도시에(Dossier) 화면": ("MicroStrategy store performance dossier opened in the ViewRingo portal", "ViewRingoポータルで開いたMicroStrategyの店舗実績ドシエ（Dossier）", "在 ViewRingo 门户中打开的 MicroStrategy 门店业绩 Dossier"),
+"ViewRingo 포털에서 열린 Strategy 매장 실적 대시보드": ("Strategy store performance dashboard opened in the ViewRingo portal", "ViewRingoポータルで開いたStrategyの店舗実績ダッシュボード", "在 ViewRingo 门户中打开的 Strategy 门店业绩仪表板"),
 "ViewRingo 포털에서 열린 Databricks AI/BI 대시보드": ("Databricks AI/BI dashboard opened in the ViewRingo portal", "ViewRingoポータルで開いたDatabricks AI/BIダッシュボード", "在 ViewRingo 门户中打开的 Databricks AI/BI 仪表板"),
 "ViewRingo 포털에서 열린 Power BI Report Server 페이지 보고서": ("Power BI Report Server paginated report opened in the ViewRingo portal", "ViewRingoポータルで開いたPower BI Report Serverのページ分割レポート", "在 ViewRingo 门户中打开的 Power BI Report Server 分页报表"),
 "ViewRingo 핵심 4가지": ("Four ViewRingo essentials", "ViewRingoの4つの要点", "ViewRingo 四大要点"),
@@ -71,7 +71,7 @@ STRINGS = {
 "기존 BI 위에 올리는 공통 계층": ("A common layer on top of your existing BI", "既存のBIの上に置く共通レイヤー", "构建在现有 BI 之上的公共层"),
 "BI 도구가 추가되어도 사용자 경험·인증·권한·메뉴·로그 체계는 그대로 유지됩니다.": ("Add another BI tool and the user experience, authentication, permissions, menus and logs stay exactly the same.", "BIツールを追加しても、ユーザー体験・認証・権限・メニュー・ログの体系はそのまま維持されます。", "即使新增 BI 工具，用户体验、认证、权限、菜单与日志体系也保持不变。"),
 "기존 BI 그대로, 하나의 포털": ("Your BI as it is, in one portal", "既存のBIはそのまま、一つのポータルに", "现有 BI 原样保留，汇聚于一个门户"),
-"Power BI · Tableau · Qlik Sense · Superset · Longview · MicroStrategy · Databricks · PBIRS를 단일 URL, 단일 화면에서.": ("Power BI · Tableau · Qlik Sense · Superset · Longview · MicroStrategy · Databricks · PBIRS on one URL, one screen.", "Power BI · Tableau · Qlik Sense · Superset · Longview · MicroStrategy · Databricks · PBIRSを単一のURL、単一の画面で。", "Power BI · Tableau · Qlik Sense · Superset · Longview · MicroStrategy · Databricks · PBIRS，同一 URL，同一界面。"),
+"Power BI · Tableau · Qlik Sense · Superset · Longview · Strategy · Databricks · PBIRS를 단일 URL, 단일 화면에서.": ("Power BI · Tableau · Qlik Sense · Superset · Longview · Strategy · Databricks · PBIRS on one URL, one screen.", "Power BI · Tableau · Qlik Sense · Superset · Longview · Strategy · Databricks · PBIRSを単一のURL、単一の画面で。", "Power BI · Tableau · Qlik Sense · Superset · Longview · Strategy · Databricks · PBIRS，同一 URL，同一界面。"),
 "하나의 인증과 권한": ("One authentication, one set of permissions", "一つの認証と権限", "统一认证与权限"),
 "정책 기반 권한그룹으로 접근을 일원화하고, 모든 접근은 활동 로그로 남깁니다.": ("Policy-based permission groups unify access, and every access is written to the activity log.", "ポリシーベースの権限グループでアクセスを一元化し、すべてのアクセスを活動ログに記録します。", "以基于策略的权限组统一访问控制，所有访问都记入活动日志。"),
 "포털 안의 AI Analytics": ("AI analytics inside the portal", "ポータルの中のAI Analytics", "门户内置的 AI Analytics"),
@@ -85,6 +85,7 @@ STRINGS = {
 # ---- platforms ----
 "지원하는 BI 플랫폼 8종": ("8 supported BI platforms", "対応BIプラットフォーム8種", "支持的 8 个 BI 平台"),
 "벤더 공식 임베딩·인증 방식을 그대로 사용하므로 기존 보고서 권한과 감사 체계가 유지됩니다.": ("Each vendor's official embedding and authentication is used as-is, so existing report permissions and audit trails are preserved.", "各ベンダー公式の埋め込み・認証方式をそのまま使うため、既存のレポート権限と監査体系が維持されます。", "直接采用各厂商官方的嵌入与认证方式，因此现有报表权限与审计体系得以保留。"),
+"※ Strategy는 기존 Strategy One / MicroStrategy ONE의 현행 제품명입니다. On-Premises 연동은 대상 버전과 Strategy Support Lifecycle을 사전에 확인합니다.": ("Strategy is the current name of the platform formerly known as Strategy One / MicroStrategy ONE. For on-premises integrations, confirm the target version and Strategy Support Lifecycle in advance.", "Strategyは、旧Strategy One / MicroStrategy ONEの現行製品名です。オンプレミス連携では、対象バージョンとStrategy Support Lifecycleを事前にご確認ください。", "Strategy 是原 Strategy One / MicroStrategy ONE 的现行产品名称。对于本地部署集成，请事先确认目标版本及 Strategy Support Lifecycle。"),
 # ---- new ----
 "이번에 더해진 두 가지": ("Two new additions", "新たに加わった2つ", "新增的两项"),
 "클라우드로 보낼 수 없는 보고서와, 계정을 나눠줄 수 없는 사용자를 위해.": ("For reports that cannot leave the data center, and users who cannot be given accounts.", "クラウドに出せないレポートと、アカウントを配れないユーザーのために。", "为无法上云的报表，以及无法逐一开设账号的用户。"),
