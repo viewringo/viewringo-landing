@@ -122,4 +122,22 @@
         });
     });
   }
+
+  // ---- demo video: click-to-load YouTube (privacy-enhanced domain, no request before play)
+  var video = document.getElementById('demoVideo');
+  var playBtn = video && video.querySelector('.video-play');
+  if (video && playBtn) {
+    playBtn.addEventListener('click', function () {
+      var id = video.getAttribute('data-video-id');
+      if (!id) return;
+      var frame = document.createElement('iframe');
+      frame.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0';
+      frame.title = video.getAttribute('data-title') || '';
+      frame.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+      frame.setAttribute('allowfullscreen', '');
+      frame.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+      video.replaceChild(frame, playBtn);
+      frame.focus();
+    });
+  }
 })();

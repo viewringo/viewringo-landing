@@ -8,7 +8,7 @@ Page bodies live in this file so header/footer/head stay identical to the landin
 Effective dates are defined below; bump only the document whose text changes."""
 import os
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-PRIVACY_EFFECTIVE = {'ko': '2026년 9월 21일', 'en': 'September 21, 2026'}
+PRIVACY_EFFECTIVE = {'ko': '2026년 9월 22일', 'en': 'September 22, 2026'}
 TERMS_EFFECTIVE = {'ko': '2026년 9월 22일', 'en': 'September 22, 2026'}
 
 GA = '''<!-- Google tag (gtag.js) -->
@@ -127,6 +127,7 @@ PRIVACY_KO = f'''<h1>개인정보 처리방침</h1>
 
 <h2>8. 쿠키 및 분석 도구</h2>
 <p>웹사이트는 이용 통계를 위해 Google Analytics 4를 사용하며, 이를 위해 이용자의 브라우저에 쿠키가 저장됩니다. Google Analytics 4는 IP 주소를 저장하지 않으며 대략적인 위치 정보만 도출합니다. 웹사이트는 광고 목적의 쿠키를 사용하지 않습니다.</p>
+<p>웹사이트의 제품 소개 영상은 YouTube(Google LLC)를 통해 제공됩니다. 영상은 개인정보 보호 강화 모드(youtube-nocookie.com)로 임베드되며, 이용자가 재생 버튼을 누르기 전에는 YouTube 서버와 연결되지 않습니다. 재생 시에는 YouTube가 기기 정보와 시청 정보를 Google의 개인정보 처리방침에 따라 처리할 수 있습니다.</p>
 <ul>
 <li>브라우저 설정에서 쿠키 저장을 거부하거나 삭제할 수 있습니다. 이 경우에도 웹사이트 열람에는 지장이 없습니다.</li>
 <li><a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">Google Analytics 차단 브라우저 부가기능</a>을 설치하면 Google Analytics의 수집을 차단할 수 있습니다.</li>
@@ -218,6 +219,7 @@ PRIVACY_EN = f'''<h1>Privacy Policy</h1>
 
 <h2>8. Cookies and analytics</h2>
 <p>The Website uses Google Analytics 4 for usage statistics, which stores cookies in your browser. Google Analytics 4 does not log or store IP addresses and derives only coarse location. The Website does not use advertising cookies.</p>
+<p>The product overview video on the Website is provided through YouTube (Google LLC). It is embedded in privacy-enhanced mode (youtube-nocookie.com), and no connection to YouTube is made until you press play. Once playing, YouTube may process device and viewing data under Google's privacy policy.</p>
 <ul>
 <li>You can refuse or delete cookies in your browser settings; the Website remains fully readable without them.</li>
 <li>You can block Google Analytics entirely with the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">Google Analytics opt-out browser add-on</a>.</li>
@@ -294,7 +296,7 @@ TERMS_KO = f'''<h1>이용약관</h1>
 </ul>
 
 <h2>7. 제3자 서비스 및 링크</h2>
-<p>웹사이트는 문의 양식 전송을 위해 EmailJS를, 이용 통계를 위해 Google Analytics를 사용하며, 외부 웹사이트로 연결되는 링크를 포함할 수 있습니다. 제3자 서비스와 외부 웹사이트는 각 제공자의 약관과 개인정보 처리방침이 적용되며, 회사는 그 내용에 대해 책임을 지지 않습니다. 개인정보 처리에 관한 사항은 <a href="privacy_ko.html">개인정보 처리방침</a>을 참고하시기 바랍니다.</p>
+<p>웹사이트는 문의 양식 전송을 위해 EmailJS를, 이용 통계를 위해 Google Analytics를, 제품 소개 영상 재생을 위해 YouTube를 사용하며, 외부 웹사이트로 연결되는 링크를 포함할 수 있습니다. 제3자 서비스와 외부 웹사이트는 각 제공자의 약관과 개인정보 처리방침이 적용되며, 회사는 그 내용에 대해 책임을 지지 않습니다. 개인정보 처리에 관한 사항은 <a href="privacy_ko.html">개인정보 처리방침</a>을 참고하시기 바랍니다.</p>
 
 <h2>8. 보증의 부인 및 책임의 제한</h2>
 <ul>
@@ -361,7 +363,7 @@ TERMS_EN = f'''<h1>Terms of Service</h1>
 </ul>
 
 <h2>7. Third-party services and links</h2>
-<p>The Website uses EmailJS to deliver contact-form submissions and Google Analytics for usage statistics, and may link to external websites. Those services and websites are governed by their own terms and privacy policies, for which we are not responsible. See our <a href="privacy.html">Privacy Policy</a> for how personal data is handled.</p>
+<p>The Website uses EmailJS to deliver contact-form submissions, Google Analytics for usage statistics and YouTube to play the product overview video, and may link to external websites. Those services and websites are governed by their own terms and privacy policies, for which we are not responsible. See our <a href="privacy.html">Privacy Policy</a> for how personal data is handled.</p>
 
 <h2>8. Disclaimer and limitation of liability</h2>
 <ul>
