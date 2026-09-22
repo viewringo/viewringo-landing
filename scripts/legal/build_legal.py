@@ -5,10 +5,11 @@
     python3 scripts/legal/build_legal.py     # from the repo root
 
 Page bodies live in this file so header/footer/head stay identical to the landing pages.
-Effective date is EFFECTIVE below; bump it whenever the text changes."""
+Effective dates are defined below; bump only the document whose text changes."""
 import os
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-EFFECTIVE = {'ko': '2026년 9월 21일', 'en': 'September 21, 2026'}
+PRIVACY_EFFECTIVE = {'ko': '2026년 9월 22일', 'en': 'September 22, 2026'}
+TERMS_EFFECTIVE = {'ko': '2026년 9월 22일', 'en': 'September 22, 2026'}
 
 GA = '''<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHQVKQ58P6"></script>
@@ -72,7 +73,7 @@ def page(lang, fname, title, desc, alt_href, alt_label, home_href, home_label, o
 
 # ============================================================ PRIVACY (KO)
 PRIVACY_KO = f'''<h1>개인정보 처리방침</h1>
-<p class="eff">시행일: {EFFECTIVE['ko']}</p>
+<p class="eff">시행일: {PRIVACY_EFFECTIVE['ko']}</p>
 <p class="intro">ViewRingo(이하 "회사")는 「개인정보 보호법」 등 관련 법령을 준수하며, 회사가 운영하는 웹사이트(www.viewringo.com, 이하 "웹사이트")를 통해 수집하는 개인정보를 다음과 같이 처리합니다.</p>
 
 <h2>1. 적용 범위</h2>
@@ -126,6 +127,7 @@ PRIVACY_KO = f'''<h1>개인정보 처리방침</h1>
 
 <h2>8. 쿠키 및 분석 도구</h2>
 <p>웹사이트는 이용 통계를 위해 Google Analytics 4를 사용하며, 이를 위해 이용자의 브라우저에 쿠키가 저장됩니다. Google Analytics 4는 IP 주소를 저장하지 않으며 대략적인 위치 정보만 도출합니다. 웹사이트는 광고 목적의 쿠키를 사용하지 않습니다.</p>
+<p>웹사이트의 제품 소개 영상은 YouTube(Google LLC)를 통해 제공됩니다. 영상은 개인정보 보호 강화 모드(youtube-nocookie.com)로 임베드되며, 이용자가 재생 버튼을 누르기 전에는 YouTube 서버와 연결되지 않습니다. 재생 시에는 YouTube가 기기 정보와 시청 정보를 Google의 개인정보 처리방침에 따라 처리할 수 있습니다.</p>
 <ul>
 <li>브라우저 설정에서 쿠키 저장을 거부하거나 삭제할 수 있습니다. 이 경우에도 웹사이트 열람에는 지장이 없습니다.</li>
 <li><a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">Google Analytics 차단 브라우저 부가기능</a>을 설치하면 Google Analytics의 수집을 차단할 수 있습니다.</li>
@@ -157,12 +159,12 @@ PRIVACY_KO = f'''<h1>개인정보 처리방침</h1>
 </ul>
 
 <h2>12. 개인정보 처리방침의 변경</h2>
-<p>이 방침의 내용이 추가·삭제·수정되는 경우 시행 7일 전(이용자 권리에 중요한 변경이 있는 경우 30일 전)부터 웹사이트에 공지합니다. 이 방침은 {EFFECTIVE['ko']}부터 시행됩니다.</p>
+<p>이 방침의 내용이 추가·삭제·수정되는 경우 시행 7일 전(이용자 권리에 중요한 변경이 있는 경우 30일 전)부터 웹사이트에 공지합니다. 이 방침은 {PRIVACY_EFFECTIVE['ko']}부터 시행됩니다.</p>
 '''
 
 # ============================================================ PRIVACY (EN)
 PRIVACY_EN = f'''<h1>Privacy Policy</h1>
-<p class="eff">Effective date: {EFFECTIVE['en']}</p>
+<p class="eff">Effective date: {PRIVACY_EFFECTIVE['en']}</p>
 <p class="intro">ViewRingo ("we", "us") operates the website www.viewringo.com (the "Website"). This policy explains what personal data we collect through the Website, why, and how you can exercise your rights. We process personal data in accordance with the Personal Information Protection Act of the Republic of Korea and, where applicable, other privacy laws such as the GDPR.</p>
 
 <h2>1. Scope</h2>
@@ -217,6 +219,7 @@ PRIVACY_EN = f'''<h1>Privacy Policy</h1>
 
 <h2>8. Cookies and analytics</h2>
 <p>The Website uses Google Analytics 4 for usage statistics, which stores cookies in your browser. Google Analytics 4 does not log or store IP addresses and derives only coarse location. The Website does not use advertising cookies.</p>
+<p>The product overview video on the Website is provided through YouTube (Google LLC). It is embedded in privacy-enhanced mode (youtube-nocookie.com), and no connection to YouTube is made until you press play. Once playing, YouTube may process device and viewing data under Google's privacy policy.</p>
 <ul>
 <li>You can refuse or delete cookies in your browser settings; the Website remains fully readable without them.</li>
 <li>You can block Google Analytics entirely with the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">Google Analytics opt-out browser add-on</a>.</li>
@@ -241,12 +244,12 @@ PRIVACY_EN = f'''<h1>Privacy Policy</h1>
 <p>Privacy officer: ViewRingo Customer Support · <a href="mailto:support@viewringo.com">support@viewringo.com</a>. Use this address for any question, request or complaint about personal data; we will reply without undue delay. Residents of the Republic of Korea may also contact the Personal Information Infringement Report Center (118, <a href="https://privacy.kisa.or.kr" rel="noopener" target="_blank">privacy.kisa.or.kr</a>) or the Personal Information Dispute Mediation Committee (1833-6972, <a href="https://www.kopico.go.kr" rel="noopener" target="_blank">www.kopico.go.kr</a>).</p>
 
 <h2>13. Changes to this policy</h2>
-<p>We announce changes on the Website at least 7 days before they take effect (30 days for changes that materially affect your rights). This policy is effective as of {EFFECTIVE['en']}.</p>
+<p>We announce changes on the Website at least 7 days before they take effect (30 days for changes that materially affect your rights). This policy is effective as of {PRIVACY_EFFECTIVE['en']}.</p>
 '''
 
 # ============================================================ TERMS (KO)
 TERMS_KO = f'''<h1>이용약관</h1>
-<p class="eff">시행일: {EFFECTIVE['ko']}</p>
+<p class="eff">시행일: {TERMS_EFFECTIVE['ko']}</p>
 <p class="intro">이 약관은 ViewRingo(이하 "회사")가 운영하는 웹사이트 www.viewringo.com(이하 "웹사이트")의 이용 조건을 정합니다. 웹사이트를 이용함으로써 이용자는 이 약관에 동의한 것으로 봅니다.</p>
 
 <h2>1. 정의</h2>
@@ -270,7 +273,7 @@ TERMS_KO = f'''<h1>이용약관</h1>
 <h2>4. 지식재산권</h2>
 <ul>
 <li>웹사이트의 콘텐츠에 관한 저작권 및 기타 지식재산권은 회사 또는 정당한 권리자에게 있습니다. ViewRingo 명칭과 로고는 회사의 상표입니다.</li>
-<li>웹사이트에 표시된 Microsoft, Power BI, Power BI Report Server, Tableau, Qlik, Apache Superset, Longview, MicroStrategy, Databricks 등 제3자의 명칭·로고·상표는 각 권리자의 자산이며, 제품이 해당 플랫폼과 연동됨을 설명하기 위해 표시한 것입니다. 이러한 표시가 각 권리자의 제휴, 후원 또는 보증을 의미하지는 않습니다.</li>
+<li>웹사이트에 표시된 Microsoft, Power BI, Power BI Report Server, Tableau, Qlik, Apache Superset, Longview, Strategy, Databricks 등 제3자의 명칭·로고·상표는 각 권리자의 자산이며, 제품이 해당 플랫폼과 연동됨을 설명하기 위해 표시한 것입니다. 이러한 표시가 각 권리자의 제휴, 후원 또는 보증을 의미하지는 않습니다.</li>
 <li>웹사이트에 인용된 시장 조사 수치 등 제3자 자료는 출처를 함께 표기하며, 해당 자료의 권리는 각 출처에 있습니다.</li>
 <li>이용자는 개인적·비상업적 열람 목적 외에 회사의 사전 서면 동의 없이 콘텐츠를 복제, 배포, 전송, 전시, 2차적 저작물 작성에 이용할 수 없습니다. 다만 출처(www.viewringo.com)를 표시한 링크 공유와 정당한 범위의 인용은 허용됩니다.</li>
 </ul>
@@ -293,7 +296,7 @@ TERMS_KO = f'''<h1>이용약관</h1>
 </ul>
 
 <h2>7. 제3자 서비스 및 링크</h2>
-<p>웹사이트는 문의 양식 전송을 위해 EmailJS를, 이용 통계를 위해 Google Analytics를 사용하며, 외부 웹사이트로 연결되는 링크를 포함할 수 있습니다. 제3자 서비스와 외부 웹사이트는 각 제공자의 약관과 개인정보 처리방침이 적용되며, 회사는 그 내용에 대해 책임을 지지 않습니다. 개인정보 처리에 관한 사항은 <a href="privacy_ko.html">개인정보 처리방침</a>을 참고하시기 바랍니다.</p>
+<p>웹사이트는 문의 양식 전송을 위해 EmailJS를, 이용 통계를 위해 Google Analytics를, 제품 소개 영상 재생을 위해 YouTube를 사용하며, 외부 웹사이트로 연결되는 링크를 포함할 수 있습니다. 제3자 서비스와 외부 웹사이트는 각 제공자의 약관과 개인정보 처리방침이 적용되며, 회사는 그 내용에 대해 책임을 지지 않습니다. 개인정보 처리에 관한 사항은 <a href="privacy_ko.html">개인정보 처리방침</a>을 참고하시기 바랍니다.</p>
 
 <h2>8. 보증의 부인 및 책임의 제한</h2>
 <ul>
@@ -309,12 +312,12 @@ TERMS_KO = f'''<h1>이용약관</h1>
 <p>이 약관에 관한 문의는 <a href="mailto:support@viewringo.com">support@viewringo.com</a>으로 보내주시기 바랍니다.</p>
 
 <h2>부칙</h2>
-<p>이 약관은 {EFFECTIVE['ko']}부터 시행합니다.</p>
+<p>이 약관은 {TERMS_EFFECTIVE['ko']}부터 시행합니다.</p>
 '''
 
 # ============================================================ TERMS (EN)
 TERMS_EN = f'''<h1>Terms of Service</h1>
-<p class="eff">Effective date: {EFFECTIVE['en']}</p>
+<p class="eff">Effective date: {TERMS_EFFECTIVE['en']}</p>
 <p class="intro">These terms govern your use of the website www.viewringo.com (the "Website") operated by ViewRingo ("we", "us"). By using the Website you agree to these terms.</p>
 
 <h2>1. Definitions</h2>
@@ -338,7 +341,7 @@ TERMS_EN = f'''<h1>Terms of Service</h1>
 <h2>4. Intellectual property</h2>
 <ul>
 <li>Copyright and other intellectual property rights in the Content belong to us or to the respective rights holders. The ViewRingo name and logo are our trademarks.</li>
-<li>Third-party names, logos and trademarks shown on the Website — including Microsoft, Power BI, Power BI Report Server, Tableau, Qlik, Apache Superset, Longview, MicroStrategy and Databricks — are the property of their respective owners and are shown only to describe the platforms the Product integrates with. Their display does not imply affiliation, sponsorship or endorsement by those owners.</li>
+<li>Third-party names, logos and trademarks shown on the Website — including Microsoft, Power BI, Power BI Report Server, Tableau, Qlik, Apache Superset, Longview, Strategy and Databricks — are the property of their respective owners and are shown only to describe the platforms the Product integrates with. Their display does not imply affiliation, sponsorship or endorsement by those owners.</li>
 <li>Third-party material quoted on the Website, such as market-research figures, is attributed to its source, which retains all rights.</li>
 <li>Except for personal, non-commercial viewing, you may not reproduce, distribute, transmit, display or create derivative works from the Content without our prior written consent. Sharing links and quoting reasonable excerpts with attribution to www.viewringo.com is permitted.</li>
 </ul>
@@ -360,7 +363,7 @@ TERMS_EN = f'''<h1>Terms of Service</h1>
 </ul>
 
 <h2>7. Third-party services and links</h2>
-<p>The Website uses EmailJS to deliver contact-form submissions and Google Analytics for usage statistics, and may link to external websites. Those services and websites are governed by their own terms and privacy policies, for which we are not responsible. See our <a href="privacy.html">Privacy Policy</a> for how personal data is handled.</p>
+<p>The Website uses EmailJS to deliver contact-form submissions, Google Analytics for usage statistics and YouTube to play the product overview video, and may link to external websites. Those services and websites are governed by their own terms and privacy policies, for which we are not responsible. See our <a href="privacy.html">Privacy Policy</a> for how personal data is handled.</p>
 
 <h2>8. Disclaimer and limitation of liability</h2>
 <ul>
@@ -376,7 +379,7 @@ TERMS_EN = f'''<h1>Terms of Service</h1>
 <p>Questions about these terms: <a href="mailto:support@viewringo.com">support@viewringo.com</a>.</p>
 
 <h2>Effective date</h2>
-<p>These terms take effect on {EFFECTIVE['en']}.</p>
+<p>These terms take effect on {TERMS_EFFECTIVE['en']}.</p>
 '''
 
 PAGES = [
