@@ -22,7 +22,31 @@ LANGS = {
 }
 IDX = {'en': 0, 'ja': 1, 'zh': 2}
 
+# hreflang targets are the same on every page: each language points at its own file and never
+# at the page being generated. x-default goes to English.
+ALTERNATES = {'en': 'index.html', 'ko': 'index_ko.html', 'ja': 'index_ja.html', 'zh': 'index_zh.html'}
+X_DEFAULT = 'index.html'
+SITE = 'https://www.viewringo.com/'
+
+
+def check_seo(s, fname):
+    """Fail the build if canonical/og:url don't name this page, or if any hreflang drifted.
+
+    A blanket URL replace used to rewrite the hreflang='ko' alternate as well, so every generated
+    page told search engines its own URL was the Korean one. These assertions make that class of
+    bug impossible to ship again."""
+    want_self = SITE + fname
+    for tag, pat in (('canonical', '<link rel="canonical" href="%s">'),
+                     ('og:url', '<meta property="og:url" content="%s">')):
+        assert s.count(pat % want_self) == 1, '%s: %s must be %s' % (fname, tag, want_self)
+    for code, target in ALTERNATES.items():
+        want = '<link rel="alternate" hreflang="%s" href="%s">' % (code, SITE + target)
+        assert s.count(want) == 1, '%s: hreflang=%s must point at %s' % (fname, code, SITE + target)
+    want_xd = '<link rel="alternate" hreflang="x-default" href="%s">' % (SITE + X_DEFAULT)
+    assert s.count(want_xd) == 1, '%s: x-default must point at %s' % (fname, SITE + X_DEFAULT)
+
 src = open(os.path.join(ROOT, 'index_ko.html'), encoding='utf-8').read()
+check_seo(src, 'index_ko.html')  # the source's own head must already be correct
 
 def translate(s, code):
     i = IDX[code]
@@ -38,7 +62,12 @@ def translate(s, code):
 for code, (fname, lang, font, label, mail) in LANGS.items():
     s = src
     s = s.replace('<html lang="ko">', '<html lang="%s">' % lang)
-    s = s.replace('https://www.viewringo.com/index_ko.html', 'https://www.viewringo.com/' + fname)  # canonical + og:url
+    # canonical and og:url name THIS page; the hreflang alternates below must keep pointing at
+    # their own language's file, so rewrite the two tags by name instead of replacing every URL.
+    s = s.replace('<link rel="canonical" href="https://www.viewringo.com/index_ko.html">',
+                  '<link rel="canonical" href="https://www.viewringo.com/%s">' % fname)
+    s = s.replace('<meta property="og:url" content="https://www.viewringo.com/index_ko.html">',
+                  '<meta property="og:url" content="https://www.viewringo.com/%s">' % fname)
     if font:
         s = s.replace('Noto+Sans+KR:wght@300;400;500;700', font)
     else:
@@ -56,5 +85,6 @@ for code, (fname, lang, font, label, mail) in LANGS.items():
     if left:
         sys.exit('Untranslated Korean remains in %s:\n  ' % fname + '\n  '.join(ln.strip()[:120] for ln in left))
     assert s.count('aria-current="true"') == 1, fname
+    check_seo(s, fname)
     open(os.path.join(ROOT, fname), 'w', encoding='utf-8').write(s)
     print('%s: %d KB, lang=%s, menu=%s, mailto=%s' % (fname, len(s.encode('utf-8')) // 1024, lang, label, mail))
